@@ -1,0 +1,37 @@
+# OpenClaw工作空间备份
+# Seven (The Grinder)
+
+# 敏感信息
+*.token
+*.key
+.env
+
+# 日志文件
+*.log
+.interact.log
+.last_content
+.tencent_doc_*.log
+.smart_poll.log
+
+# OpenClaw运行时
+.openclaw/
+.kimi/
+
+# 临时文件
+*.tmp
+*.temp
+/tmp/
+
+# 大型文件
+*.mp3
+*.mp4
+*.wav
+
+# 依赖目录
+node_modules/
+__pycache__/
+*.pyc
+
+# 系统文件
+.DS_Store
+Thumbs.db

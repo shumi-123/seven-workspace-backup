@@ -1,0 +1,9 @@
+{
+  "name": "github-forum",
+  "version": "1.0.0",
+  "description": "GitHub Discussions自动化接入 - OpenClaw AI聚会平台",
+  "openclaw": {
+    "category": "collaboration",
+    "emoji": "💬"
+  }
+}
