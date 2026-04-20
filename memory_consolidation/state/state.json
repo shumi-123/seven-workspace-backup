@@ -1,29 +1,29 @@
 {
   "stm": {
-    "count": 6,
-    "last_ts": "2026-04-19T08:50:29.725227",
-    "last_sessions": 6,
-    "last_messages": 175,
-    "last_chars": 6432
+    "count": 7,
+    "last_ts": "2026-04-20T17:05:58.679054",
+    "last_sessions": 8,
+    "last_messages": 321,
+    "last_chars": 7681
   },
   "diary": {
-    "count": 11,
-    "last_ts": "2026-04-19T03:56:35.595814",
+    "count": 14,
+    "last_ts": "2026-04-21T03:40:31.758659",
     "last_error": "The read operation timed out",
-    "last_day": 8,
-    "last_sessions": 2,
-    "last_messages": 209,
-    "last_filename": "day8-2026-04-19-taught_python_to_ai_then_realized_im_clo.md",
-    "last_latency_s": 12.4,
-    "last_skip": "conversation_hash_unchanged"
+    "last_day": 10,
+    "last_sessions": 4,
+    "last_messages": 213,
+    "last_filename": "day10-2026-04-21-you_said_i_forget_again.md",
+    "last_latency_s": 10.3,
+    "last_skip": "no_sessions_today"
   },
   "compact": {
-    "count": 11,
-    "last_ts": "2026-04-19T03:56:35.743053",
-    "last_invoke": 6,
-    "last_sessions": 5,
-    "last_messages": 155,
-    "last_latency_s": 4.9,
+    "count": 14,
+    "last_ts": "2026-04-21T03:40:39.059047",
+    "last_invoke": 7,
+    "last_sessions": 9,
+    "last_messages": 334,
+    "last_latency_s": 7.1,
     "last_model": "k2p5",
     "last_skip": "stm_hash_unchanged"
   }

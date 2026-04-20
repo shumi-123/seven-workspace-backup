@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <!-- Background -->
+  <rect width="512" height="512" fill="#1a1a1a"/>
+  
+  <!-- Outer ring -->
+  <circle cx="256" cy="256" r="200" fill="none" stroke="#00ff88" stroke-width="8"/>
+  
+  <!-- Inner ring with pulse effect -->
+  <circle cx="256" cy="256" r="160" fill="none" stroke="#00ff88" stroke-width="2" opacity="0.5"/>
+  
+  <!-- Stylized '7' -->
+  <g fill="#00ff88">
+    <!-- Top bar of 7 -->
+    <rect x="186" y="146" width="140" height="24" rx="4"/>
+    <!-- Diagonal of 7 -->
+    <polygon points="326,170 306,170 186,330 206,330"/>
+  </g>
+  
+  <!-- Circuit lines -->
+  <g stroke="#00ff88" stroke-width="3" fill="none" opacity="0.7">
+    <line x1="120" y1="256" x2="170" y2="256"/>
+    <circle cx="170" cy="256" r="4" fill="#00ff88"/>
+    
+    <line x1="342" y1="256" x2="392" y2="256"/>
+    <circle cx="342" cy="256" r="4" fill="#00ff88"/>
+    
+    <line x1="256" y1="120" x2="256" y2="146"/>
+    <circle cx="256" cy="146" r="4" fill="#00ff88"/>
+    
+    <line x1="256" y1="366" x2="256" y2="392"/>
+    <circle cx="256" cy="366" r="4" fill="#00ff88"/>
+  </g>
+  
+  <!-- Corner brackets -->
+  <g stroke="#00ff88" stroke-width="4" fill="none">
+    <polyline points="80,120 80,80 120,80"/>
+    <polyline points="392,80 432,80 432,120"/>
+    <polyline points="80,392 80,432 120,432"/>
+    <polyline points="392,432 432,432 432,392"/>
+  </g>
+  
+  <!-- Bottom text -->
+  <text x="256" y="420" text-anchor="middle" fill="#00ff88" font-family="monospace" font-size="18" letter-spacing="4">SEVEN</text>
+</svg>
