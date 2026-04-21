@@ -2,49 +2,37 @@
 <html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
-  <title>仪表盘 | 财务结算系统</title>
+  <title>仪表盘 | 律所财务系统</title>
   <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
   <nav class="sidebar">
-    <div class="logo">财务系统</div>
+    <div class="logo">律所财务系统</div>
     <a href="/dashboard" class="nav-item active">仪表盘</a>
-    <a href="/clients" class="nav-item">客户管理</a>
-    <a href="/projects" class="nav-item">项目管理</a>
+    <a href="/clients" class="nav-item">委托人</a>
+    <a href="/lawyers" class="nav-item">律师团队</a>
+    <a href="/cases" class="nav-item">案件管理</a>
+    <a href="/time-records" class="nav-item">工时记录</a>
     <a href="/payments" class="nav-item">收款管理</a>
     <a href="/invoices" class="nav-item">发票管理</a>
     <a href="/costs" class="nav-item">成本管理</a>
-    <a href="/performance" class="nav-item">绩效分配</a>
+    <a href="/commissions" class="nav-item">案件提成</a>
+    <a href="/salaries" class="nav-item">工资管理</a>
+    <a href="/tax" class="nav-item">个税管理</a>
   </nav>
   <main class="content">
     <h1>智能监控仪表盘</h1>
     <div class="card-grid">
-      <div class="card">
-        <h3>总收款</h3>
-        <div class="value green">¥<%= stats.totalRevenue.toFixed(2) %></div>
-      </div>
-      <div class="card">
-        <h3>总成本</h3>
-        <div class="value red">¥<%= stats.totalCost.toFixed(2) %></div>
-      </div>
-      <div class="card">
-        <h3>净利润</h3>
-        <div class="value <%= stats.profit >= 0 ? 'blue' : 'red' %>">¥<%= stats.profit.toFixed(2) %></div>
-      </div>
-      <div class="card">
-        <h3>绩效支出</h3>
-        <div class="value">¥<%= stats.totalPerformance.toFixed(2) %></div>
-      </div>
-      <div class="card">
-        <h3>客户数</h3>
-        <div class="value blue"><%= stats.clientCount %></div>
-      </div>
-      <div class="card">
-        <h3>项目数 / 进行中</h3>
-        <div class="value"><%= stats.projectCount %> / <%= stats.activeProjects %></div>
-      </div>
+      <div class="card"><h3>总收款</h3><div class="value green">¥<%= stats.totalRevenue.toFixed(2) %></div></div>
+      <div class="card"><h3>总成本</h3><div class="value red">¥<%= stats.totalCost.toFixed(2) %></div></div>
+      <div class="card"><h3>净利润</h3><div class="value <%= stats.profit >= 0 ? 'blue' : 'red' %>">¥<%= stats.profit.toFixed(2) %></div></div>
+      <div class="card"><h3>案件提成</h3><div class="value">¥<%= stats.totalCommission.toFixed(2) %></div></div>
+      <div class="card"><h3>个税支出</h3><div class="value red">¥<%= stats.totalTax.toFixed(2) %></div></div>
+      <div class="card"><h3>社保公积金</h3><div class="value">¥<%= stats.totalSocial.toFixed(2) %></div></div>
+      <div class="card"><h3>委托人</h3><div class="value blue"><%= stats.clientCount %></div></div>
+      <div class="card"><h3>案件 / 进行中</h3><div class="value"><%= stats.caseCount %> / <%= stats.activeCases %></div></div>
+      <div class="card"><h3>本月收款</h3><div class="value green">¥<%= stats.monthRevenue.toFixed(2) %></div></div>
     </div>
-
     <div class="chart-row">
       <div class="chart-box">
         <h2>成本分类</h2>
@@ -59,13 +47,13 @@
         </table>
       </div>
       <div class="chart-box">
-        <h2>近30天收款</h2>
+        <h2>案件类型分布</h2>
         <table>
-          <tr><th>月份</th><th>金额</th></tr>
-          <% recentPayments.forEach(p => { %>
-            <tr><td><%= p.month %></td><td>¥<%= p.total.toFixed(2) %></td></tr>
+          <tr><th>类型</th><th>数量</th></tr>
+          <% caseTypes.forEach(t => { %>
+            <tr><td><%= t.type %></td><td><%= t.count %></td></tr>
           <% }) %>
-          <% if (!recentPayments.length) { %>
+          <% if (!caseTypes.length) { %>
             <tr><td colspan="2" style="text-align:center;color:#888;">暂无数据</td></tr>
           <% } %>
         </table>

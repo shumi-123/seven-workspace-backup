@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head><meta charset="UTF-8"><title>案件管理 | 律所财务系统</title><link rel="stylesheet" href="/css/style.css"></head>
+<body>
+<nav class="sidebar">
+  <div class="logo">律所财务系统</div>
+  <a href="/dashboard" class="nav-item">仪表盘</a>
+  <a href="/clients" class="nav-item">委托人</a>
+  <a href="/lawyers" class="nav-item">律师团队</a>
+  <a href="/cases" class="nav-item active">案件管理</a>
+  <a href="/time-records" class="nav-item">工时记录</a>
+  <a href="/payments" class="nav-item">收款管理</a>
+  <a href="/invoices" class="nav-item">发票管理</a>
+  <a href="/costs" class="nav-item">成本管理</a>
+  <a href="/commissions" class="nav-item">案件提成</a>
+  <a href="/salaries" class="nav-item">工资管理</a>
+  <a href="/tax" class="nav-item">个税管理</a>
+</nav>
+<main class="content">
+  <h1>案件管理</h1>
+  <form class="form-inline" action="/cases/add" method="POST">
+    <div class="form-group"><label>委托人</label><select name="client_id" required><% clients.forEach(c => { %><option value="<%= c.id %>"><%= c.name %></option><% }) %></select></div>
+    <div class="form-group"><label>案件编号</label><input name="case_no"></div>
+    <div class="form-group"><label>案件名称</label><input name="name" required></div>
+    <div class="form-group"><label>类型</label>
+      <select name="type"><option value="民事">民事</option><option value="刑事">刑事</option><option value="行政">行政</option><option value="商事">商事</option><option value="仲裁">仲裁</option><option value="法律顾问">法律顾问</option></select>
+    </div>
+    <div class="form-group"><label>阶段</label>
+      <select name="stage"><option value="立案">立案</option><option value="调查">调查</option><option value="庭审">庭审</option><option value="执行">执行</option><option value="结案">结案</option></select>
+    </div>
+    <div class="form-group"><label>计费模式</label>
+      <select name="billing_mode"><option value="固定费用">固定费用</option><option value="小时计费">小时计费</option><option value="风险代理">风险代理</option></select>
+    </div>
+    <div class="form-group"><label>小时费率</label><input name="hourly_rate" type="number" step="0.01"></div>
+    <div class="form-group"><label>固定费用</label><input name="fixed_fee" type="number" step="0.01"></div>
+    <div class="form-group"><label>风险比例(%)</label><input name="risk_rate" type="number" step="0.01"></div>
+    <div class="form-group"><label>合同金额</label><input name="contract_amount" type="number" step="0.01"></div>
+    <div class="form-group"><label>主办律师</label><select name="responsible_lawyer_id"><option value="">-</option><% lawyers.forEach(l => { %><option value="<%= l.id %>"><%= l.name %></option><% }) %></select></div>
+    <div class="form-group"><label>协办律师</label><select name="assistant_lawyer_id"><option value="">-</option><% lawyers.forEach(l => { %><option value="<%= l.id %>"><%= l.name %></option><% }) %></select></div>
+    <div class="form-group"><label>开始日期</label><input name="start_date" type="date"></div>
+    <div class="form-group"><label>结束日期</label><input name="end_date" type="date"></div>
+    <div class="form-group"><label>备注</label><input name="remark"></div>
+    <button class="btn btn-primary" type="submit">新增</button>
+  </form>
+  <table>
+    <tr><th>编号</th><th>委托人</th><th>名称</th><th>类型</th><th>阶段</th><th>计费</th><th>合同额</th><th>主办律师</th><th>状态</th><th>操作</th></tr>
+    <% cases.forEach(c => { %>
+      <tr>
+        <td><%= c.case_no||'-' %></td><td><%= c.client_name||'-' %></td><td><%= c.name %></td>
+        <td><%= c.type %></td><td><span class="badge badge-blue"><%= c.stage %></span></td>
+        <td><%= c.billing_mode %></td><td>¥<%= c.contract_amount.toFixed(2) %></td>
+        <td><%= c.responsible_lawyer||'-' %></td>
+        <td><span class="badge <%= c.status==='进行中'?'badge-green':c.status==='已完成'?'badge-blue':'badge-yellow' %>"><%= c.status %></span></td>
+        <td><form action="/cases/delete/<%= c.id %>" method="POST" style="display:inline" onsubmit="return confirm('确定删除？')"><button class="btn btn-danger">删除</button></form></td>
+      </tr>
+    <% }) %>
+  </table>
+</main>
+</body>
+</html>

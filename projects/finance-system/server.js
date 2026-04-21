@@ -12,33 +12,33 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
 
-// 全局DB中间件
 let db;
 app.use((req, res, next) => {
   req.db = db;
   next();
 });
 
-// 路由
 app.use('/clients', require('./routes/clients'));
-app.use('/projects', require('./routes/projects'));
+app.use('/lawyers', require('./routes/lawyers'));
+app.use('/cases', require('./routes/cases'));
+app.use('/time-records', require('./routes/timeRecords'));
 app.use('/payments', require('./routes/payments'));
 app.use('/invoices', require('./routes/invoices'));
 app.use('/costs', require('./routes/costs'));
-app.use('/performance', require('./routes/performance'));
+app.use('/commissions', require('./routes/commissions'));
+app.use('/salaries', require('./routes/salaries'));
+app.use('/tax', require('./routes/tax'));
 app.use('/dashboard', require('./routes/dashboard'));
 
-// 首页
 app.get('/', (req, res) => {
   res.redirect('/dashboard');
 });
 
-// 启动
 async function start() {
   db = await initDB();
   await createTables(db);
   app.listen(PORT, () => {
-    console.log(`Finance System running at http://localhost:${PORT}`);
+    console.log(`Law Firm Finance System running at http://localhost:${PORT}`);
   });
 }
 

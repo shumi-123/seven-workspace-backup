@@ -1,51 +1,44 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
-<head>
-  <meta charset="UTF-8">
-  <title>客户管理 | 财务结算系统</title>
-  <link rel="stylesheet" href="/css/style.css">
-</head>
+<head><meta charset="UTF-8"><title>委托人 | 律所财务系统</title><link rel="stylesheet" href="/css/style.css"></head>
 <body>
-  <nav class="sidebar">
-    <div class="logo">财务系统</div>
-    <a href="/dashboard" class="nav-item">仪表盘</a>
-    <a href="/clients" class="nav-item active">客户管理</a>
-    <a href="/projects" class="nav-item">项目管理</a>
-    <a href="/payments" class="nav-item">收款管理</a>
-    <a href="/invoices" class="nav-item">发票管理</a>
-    <a href="/costs" class="nav-item">成本管理</a>
-    <a href="/performance" class="nav-item">绩效分配</a>
-  </nav>
-  <main class="content">
-    <h1>客户管理</h1>
-    <form class="form-inline" action="/clients/add" method="POST">
-      <div class="form-group"><label>客户名称</label><input name="name" required></div>
-      <div class="form-group"><label>联系人</label><input name="contact"></div>
-      <div class="form-group"><label>电话</label><input name="phone"></div>
-      <div class="form-group"><label>邮箱</label><input name="email"></div>
-      <div class="form-group"><label>地址</label><input name="address"></div>
-      <div class="form-group"><label>备注</label><input name="remark"></div>
-      <button class="btn btn-primary" type="submit">新增客户</button>
-    </form>
-    <table>
-      <tr><th>ID</th><th>名称</th><th>联系人</th><th>电话</th><th>邮箱</th><th>地址</th><th>备注</th><th>操作</th></tr>
-      <% clients.forEach(c => { %>
-        <tr>
-          <td><%= c.id %></td>
-          <td><%= c.name %></td>
-          <td><%= c.contact || '-' %></td>
-          <td><%= c.phone || '-' %></td>
-          <td><%= c.email || '-' %></td>
-          <td><%= c.address || '-' %></td>
-          <td><%= c.remark || '-' %></td>
-          <td>
-            <form action="/clients/delete/<%= c.id %>" method="POST" style="display:inline" onsubmit="return confirm('确定删除？')">
-              <button class="btn btn-danger" type="submit">删除</button>
-            </form>
-          </td>
-        </tr>
-      <% }) %>
-    </table>
-  </main>
+<nav class="sidebar">
+  <div class="logo">律所财务系统</div>
+  <a href="/dashboard" class="nav-item">仪表盘</a>
+  <a href="/clients" class="nav-item active">委托人</a>
+  <a href="/lawyers" class="nav-item">律师团队</a>
+  <a href="/cases" class="nav-item">案件管理</a>
+  <a href="/time-records" class="nav-item">工时记录</a>
+  <a href="/payments" class="nav-item">收款管理</a>
+  <a href="/invoices" class="nav-item">发票管理</a>
+  <a href="/costs" class="nav-item">成本管理</a>
+  <a href="/commissions" class="nav-item">案件提成</a>
+  <a href="/salaries" class="nav-item">工资管理</a>
+  <a href="/tax" class="nav-item">个税管理</a>
+</nav>
+<main class="content">
+  <h1>委托人管理</h1>
+  <form class="form-inline" action="/clients/add" method="POST">
+    <div class="form-group"><label>委托人名称</label><input name="name" required></div>
+    <div class="form-group"><label>联系人</label><input name="contact"></div>
+    <div class="form-group"><label>电话</label><input name="phone"></div>
+    <div class="form-group"><label>邮箱</label><input name="email"></div>
+    <div class="form-group"><label>身份证号</label><input name="id_card"></div>
+    <div class="form-group"><label>公司</label><input name="company"></div>
+    <div class="form-group"><label>地址</label><input name="address"></div>
+    <div class="form-group"><label>备注</label><input name="remark"></div>
+    <button class="btn btn-primary" type="submit">新增</button>
+  </form>
+  <table>
+    <tr><th>ID</th><th>名称</th><th>联系人</th><th>电话</th><th>公司</th><th>身份证号</th><th>备注</th><th>操作</th></tr>
+    <% clients.forEach(c => { %>
+      <tr>
+        <td><%= c.id %></td><td><%= c.name %></td><td><%= c.contact||'-' %></td><td><%= c.phone||'-' %></td>
+        <td><%= c.company||'-' %></td><td><%= c.id_card||'-' %></td><td><%= c.remark||'-' %></td>
+        <td><form action="/clients/delete/<%= c.id %>" method="POST" style="display:inline" onsubmit="return confirm('确定删除？')"><button class="btn btn-danger">删除</button></form></td>
+      </tr>
+    <% }) %>
+  </table>
+</main>
 </body>
 </html>

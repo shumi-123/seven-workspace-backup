@@ -3,53 +3,53 @@ const router = express.Router();
 
 router.get('/', (req, res) => {
   const stats = {};
-
-  // 总收款
+  
   req.db.get('SELECT SUM(amount) as total FROM payments WHERE status = "已到账"', [], (err, row) => {
     stats.totalRevenue = row?.total || 0;
-
-    // 总成本
+    
     req.db.get('SELECT SUM(amount) as total FROM costs', [], (err2, row2) => {
       stats.totalCost = row2?.total || 0;
-
-      // 总绩效
-      req.db.get('SELECT SUM(amount) as total FROM performance', [], (err3, row3) => {
-        stats.totalPerformance = row3?.total || 0;
-
-        // 客户数
-        req.db.get('SELECT COUNT(*) as count FROM clients', [], (err4, row4) => {
-          stats.clientCount = row4?.count || 0;
-
-          // 项目数
-          req.db.get('SELECT COUNT(*) as count FROM projects', [], (err5, row5) => {
-            stats.projectCount = row5?.count || 0;
-
-            // 进行中项目
-            req.db.get('SELECT COUNT(*) as count FROM projects WHERE status = "进行中"', [], (err6, row6) => {
-              stats.activeProjects = row6?.count || 0;
-
-              // 利润
-              stats.profit = stats.totalRevenue - stats.totalCost - stats.totalPerformance;
-
-              // 近30天收款
-              req.db.all(
-                'SELECT strftime("%Y-%m", pay_date) as month, SUM(amount) as total FROM payments WHERE status = "已到账" AND pay_date >= date("now", "-30 days") GROUP BY month',
-                [],
-                (err7, recentPayments) => {
-                  // 成本分类汇总
-                  req.db.all(
-                    'SELECT category, SUM(amount) as total FROM costs GROUP BY category',
-                    [],
-                    (err8, costByCategory) => {
-                      res.render('dashboard', {
-                        stats,
-                        recentPayments: recentPayments || [],
-                        costByCategory: costByCategory || []
+      
+      req.db.get('SELECT SUM(amount) as total FROM case_commissions', [], (err3, row3) => {
+        stats.totalCommission = row3?.total || 0;
+        
+        req.db.get('SELECT SUM(tax) as total FROM salaries', [], (err4, row4) => {
+          stats.totalTax = row4?.total || 0;
+          
+          req.db.get('SELECT SUM(social_insurance + housing_fund) as total FROM salaries', [], (err5, row5) => {
+            stats.totalSocial = row5?.total || 0;
+            
+            req.db.get('SELECT COUNT(*) as count FROM clients', [], (err6, row6) => {
+              stats.clientCount = row6?.count || 0;
+              
+              req.db.get('SELECT COUNT(*) as count FROM cases', [], (err7, row7) => {
+                stats.caseCount = row7?.count || 0;
+                
+                req.db.get('SELECT COUNT(*) as count FROM cases WHERE status = "进行中"', [], (err8, row8) => {
+                  stats.activeCases = row8?.count || 0;
+                  
+                  stats.profit = stats.totalRevenue - stats.totalCost - stats.totalCommission - stats.totalSocial;
+                  
+                  // 案件类型分布
+                  req.db.all('SELECT type, COUNT(*) as count FROM cases GROUP BY type', [], (err9, caseTypes) => {
+                    
+                    // 本月收款
+                    req.db.get('SELECT SUM(amount) as total FROM payments WHERE status = "已到账" AND pay_date >= date("now", "start of month")', [], (err10, row10) => {
+                      stats.monthRevenue = row10?.total || 0;
+                      
+                      // 成本分类
+                      req.db.all('SELECT category, SUM(amount) as total FROM costs GROUP BY category', [], (err11, costByCategory) => {
+                        
+                        res.render('dashboard', {
+                          stats,
+                          caseTypes: caseTypes || [],
+                          costByCategory: costByCategory || []
+                        });
                       });
-                    }
-                  );
-                }
-              );
+                    });
+                  });
+                });
+              });
             });
           });
         });
