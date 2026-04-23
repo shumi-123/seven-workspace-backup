@@ -17,7 +17,7 @@
   <a href="/tax" class="nav-item">个税管理</a>
 </nav>
 <main class="content">
-  <h1>律师团队管理</h1>
+  <h1>律师团队管理 <a href="/export/lawyers" class="btn">导出CSV</a></h1>
   <form class="form-inline" action="/lawyers/add" method="POST">
     <div class="form-group"><label>姓名</label><input name="name" required></div>
     <div class="form-group"><label>执业证号</label><input name="license_no"></div>
@@ -41,7 +41,7 @@
         <td><span class="badge <%= l.role==='合伙人'?'badge-blue':l.role==='专职律师'?'badge-green':'badge-yellow' %>"><%= l.role %></span></td>
         <td>¥<%= l.base_salary.toFixed(2) %></td><td><%= l.commission_rate %>%</td>
         <td>¥<%= l.social_insurance.toFixed(2) %></td><td>¥<%= l.housing_fund.toFixed(2) %></td>
-        <td><form action="/lawyers/delete/<%= l.id %>" method="POST" style="display:inline" onsubmit="return confirm('确定删除？')"><button class="btn btn-danger">删除</button></form></td>
+        <td><form href="/lawyers/edit/<%= l.id %>" class="btn btn-primary">编辑</a> <form action="/lawyers/delete/<%= l.id %>" method="POST" style="display:inline" onsubmit="return confirm('确定删除？')"><button class="btn btn-danger">删除</button></form></td>
       </tr>
     <% }) %>
   </table>

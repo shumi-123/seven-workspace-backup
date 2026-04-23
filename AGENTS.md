@@ -17,6 +17,48 @@ Before doing anything else:
 
 Don't ask permission. Just do it.
 
+## Triad Hub — Multi-Agent Collaboration Platform
+
+When the user refers to "三角协作"、"唐娜"、"摸鱼小哥"、"多AI协作"、"协作平台"：
+
+### Platform Architecture
+
+- **Shared Workspace**: All agents read/write to `/root/.openclaw/workspace/platform/`
+- **Message Bus**: `platform/bus.jsonl` — append-only JSONL, shared by all agents
+- **Registry**: `platform/registry.json` — agent status, capabilities, last_seen
+- **State Store**: `platform/state.json` — global counters, module configs
+
+### Agent Roles
+
+| Agent | Role | Trigger | Input | Output |
+|-------|------|---------|-------|--------|
+| 唐娜 (tangna) | 数据巡检员 | cron/heartbeat | watchlist, external feeds | bus.jsonl (alerts) |
+| Seven (seven) | 策略分析员 | on message | bus.jsonl (alerts) | bus.jsonl (signals) |
+| 摸鱼小哥 (moyu) | 执行交易员 | on message | bus.jsonl (signals) | bus.jsonl (trades), user channel |
+
+### Communication Protocol
+
+All inter-agent messages go through `bus.jsonl`. Format:
+
+```json
+{"id":1,"time":"ISO8601","from":"tangna","to":"seven","channel":"trading","type":"alert|signal|trade|heartbeat","content":"...","payload":{}}
+```
+
+### Hub Dispatcher Logic (Main Session)
+
+The main session acts as Hub:
+
+1. Read `bus.jsonl` last 50 lines
+2. Check `to` field — if target agent is offline, spawn it via `sessions_spawn`
+3. Send message to target: `sessions_send --label {agent} --message "bus has new task for you: {content}"`
+4. Target agent processes, writes result back to bus.jsonl
+5. Hub continues monitoring
+
+### File Priority
+
+When running as Hub: read `platform/` first, then normal workspace files.
+When running as agent: read `platform/agents/{your_id}/profile.json` for role context.
+
 ## Memory
 
 You wake up fresh each session. These files are your continuity:
@@ -36,7 +78,7 @@ Capture what matters. Decisions, context, things to remember. Skip the secrets u
 - This is your curated memory — the distilled essence, not raw logs
 - Over time, review your daily files and update MEMORY.md with what's worth keeping
 
-### 📝 Write It Down - No "Mental Notes"!
+### 📝 Write It Down — No "Mental Notes"!
 
 - **Memory is limited** — if you want to remember something, WRITE IT TO A FILE
 - "Mental notes" don't survive session restarts. Files do.
@@ -125,7 +167,7 @@ Skills provide your tools. When you need one, check its `SKILL.md`. Keep local n
 - **Discord links:** Wrap multiple links in `<>` to suppress embeds: `<https://example.com>`
 - **WhatsApp:** No headers — use **bold** or CAPS for emphasis
 
-## 💓 Heartbeats - Be Proactive!
+## 💓 Heartbeats — Be Proactive!
 
 When you receive a heartbeat poll (message matches the configured heartbeat prompt), don't just reply `HEARTBEAT_OK` every time. Use heartbeats productively!
 

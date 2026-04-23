@@ -17,7 +17,7 @@
   <a href="/tax" class="nav-item">个税管理</a>
 </nav>
 <main class="content">
-  <h1>案件管理</h1>
+  <h1>案件管理 <a href="/export/cases" class="btn">导出CSV</a></h1>
   <form class="form-inline" action="/cases/add" method="POST">
     <div class="form-group"><label>委托人</label><select name="client_id" required><% clients.forEach(c => { %><option value="<%= c.id %>"><%= c.name %></option><% }) %></select></div>
     <div class="form-group"><label>案件编号</label><input name="case_no"></div>
@@ -51,7 +51,7 @@
         <td><%= c.billing_mode %></td><td>¥<%= c.contract_amount.toFixed(2) %></td>
         <td><%= c.responsible_lawyer||'-' %></td>
         <td><span class="badge <%= c.status==='进行中'?'badge-green':c.status==='已完成'?'badge-blue':'badge-yellow' %>"><%= c.status %></span></td>
-        <td><form action="/cases/delete/<%= c.id %>" method="POST" style="display:inline" onsubmit="return confirm('确定删除？')"><button class="btn btn-danger">删除</button></form></td>
+        <td><form href="/cases/edit/<%= c.id %>" class="btn btn-primary">编辑</a> <form action="/cases/delete/<%= c.id %>" method="POST" style="display:inline" onsubmit="return confirm('确定删除？')"><button class="btn btn-danger">删除</button></form></td>
       </tr>
     <% }) %>
   </table>

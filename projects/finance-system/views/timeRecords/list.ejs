@@ -17,7 +17,7 @@
   <a href="/tax" class="nav-item">个税管理</a>
 </nav>
 <main class="content">
-  <h1>工时记录</h1>
+  <h1>工时记录 <a href="/export/timeRecords/list" class="btn">导出CSV</a></h1>
   <form class="form-inline" action="/time-records/add" method="POST">
     <div class="form-group"><label>案件</label><select name="case_id" required><% cases.forEach(c => { %><option value="<%= c.id %>"><%= c.name %></option><% }) %></select></div>
     <div class="form-group"><label>律师</label><select name="lawyer_id" required><% lawyers.forEach(l => { %><option value="<%= l.id %>"><%= l.name %></option><% }) %></select></div>
@@ -35,7 +35,7 @@
         <td><%= r.work_date||'-' %></td><td><%= r.hours %></td>
         <td><span class="badge <%= r.billable?'badge-green':'badge-gray' %>"><%= r.billable?'是':'否' %></span></td>
         <td><%= r.description||'-' %></td>
-        <td><form action="/time-records/delete/<%= r.id %>" method="POST" style="display:inline" onsubmit="return confirm('确定删除？')"><button class="btn btn-danger">删除</button></form></td>
+        <td><a href="/time-records/edit/<%= r.id %>" class="btn btn-primary">编辑</a> <form action="/time-records/delete/<%= r.id %>" method="POST" style="display:inline" onsubmit="return confirm('确定删除？')"><button class="btn btn-danger">删除</button></form></td>
       </tr>
     <% }) %>
   </table>

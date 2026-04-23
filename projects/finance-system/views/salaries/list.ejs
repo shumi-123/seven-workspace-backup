@@ -17,7 +17,7 @@
   <a href="/tax" class="nav-item">个税管理</a>
 </nav>
 <main class="content">
-  <h1>工资管理（自动计算个税）</h1>
+  <h1>工资管理（自动计算个税） <a href="/export/salaries/list" class="btn">导出CSV</a></h1>
   <form class="form-inline" action="/salaries/add" method="POST">
     <div class="form-group"><label>律师</label><select name="lawyer_id" required><% lawyers.forEach(l => { %><option value="<%= l.id %>"><%= l.name %></option><% }) %></select></div>
     <div class="form-group"><label>年份</label><input name="year" type="number" value="<%= new Date().getFullYear() %>"></div>
@@ -41,7 +41,7 @@
         <td>¥<%= s.gross_salary.toFixed(2) %></td><td>¥<%= s.social_insurance.toFixed(2) %></td>
         <td>¥<%= s.housing_fund.toFixed(2) %></td><td>¥<%= s.tax.toFixed(2) %></td>
         <td><strong>¥<%= s.net_salary.toFixed(2) %></strong></td>
-        <td><form action="/salaries/delete/<%= s.id %>" method="POST" style="display:inline" onsubmit="return confirm('确定删除？')"><button class="btn btn-danger">删除</button></form></td>
+        <td><a href="/salaries/edit/<%= s.id %>" class="btn btn-primary">编辑</a> <form action="/salaries/delete/<%= s.id %>" method="POST" style="display:inline" onsubmit="return confirm('确定删除？')"><button class="btn btn-danger">删除</button></form></td>
       </tr>
     <% }) %>
   </table>

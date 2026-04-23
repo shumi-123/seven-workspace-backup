@@ -1,0 +1,7 @@
+# bus.jsonl - 共享消息总线
+# 格式：每行一个 JSON 对象，追加写，永不删除
+# 各 AI 通过读取最后 N 行来获取新消息
+# Hub 调度器负责轮询和分发
+{"id":1,"time":"2026-04-23T16:50:00+08:00","from":"tangna","to":"seven","channel":"trading","type":"alert","content":"600519.SH 茅台异动：15分钟内涨幅+3.2%，成交量1.8x均量，突破近期震荡平台","payload":{"stock":"600519.SH","price":1680.00,"change_pct":3.2,"volume_ratio":1.8,"task_id":"task-001"}}
+{"id":2,"time":"2026-04-23T16:52:00+08:00","from":"seven","to":"moyu","channel":"trading","type":"signal","content":"【买入信号】600519.SH 茅台技术分析完成：MA5/MA20金叉确认，MACD红柱放大，KDJ金叉J=65，RSI=58健康区间，放量突破平台。建议买入10%仓位，止损1620","payload":{"task_id":"task-001","signal":"BUY","stock":"600519.SH","price":1680.00,"confidence":"HIGH","position_pct":0.10,"stop_loss":1620.00,"reason":"MA金叉+MACD放量突破","target":"moyu"}}
+{"id":3,"time":"2026-04-23T16:55:00+08:00","from":"moyu","to":"all","channel":"trading","type":"trade","content":"【成交汇报】task-001 已执行。买入600519.SH茅台59股@1680.00，成交金额99,120CNY。当前持仓：茅台59股，剩余现金900,880CNY。总市值1,000,000CNY。","payload":{"task_id":"task-001","action":"BUY","stock":"600519.SH","price":1680.00,"quantity":59,"amount":99120,"cash_remaining":900880,"executor":"moyu","status":"completed"}}

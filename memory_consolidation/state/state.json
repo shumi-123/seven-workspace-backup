@@ -1,29 +1,29 @@
 {
   "stm": {
-    "count": 7,
-    "last_ts": "2026-04-20T17:05:58.679054",
-    "last_sessions": 8,
-    "last_messages": 321,
-    "last_chars": 7681
+    "count": 9,
+    "last_ts": "2026-04-21T13:59:55.915636",
+    "last_sessions": 10,
+    "last_messages": 364,
+    "last_chars": 9105
   },
   "diary": {
-    "count": 14,
-    "last_ts": "2026-04-21T03:40:31.758659",
+    "count": 17,
+    "last_ts": "2026-04-23T03:55:01.425595",
     "last_error": "The read operation timed out",
-    "last_day": 10,
-    "last_sessions": 4,
-    "last_messages": 213,
-    "last_filename": "day10-2026-04-21-you_said_i_forget_again.md",
-    "last_latency_s": 10.3,
-    "last_skip": "no_sessions_today"
+    "last_day": 12,
+    "last_sessions": 1,
+    "last_messages": 12,
+    "last_filename": "day12-2026-04-23-three_times_faq_confusion.md",
+    "last_latency_s": 6.4,
+    "last_skip": "conversation_hash_unchanged"
   },
   "compact": {
-    "count": 14,
-    "last_ts": "2026-04-21T03:40:39.059047",
-    "last_invoke": 7,
-    "last_sessions": 9,
-    "last_messages": 334,
-    "last_latency_s": 7.1,
+    "count": 17,
+    "last_ts": "2026-04-23T03:55:01.678346",
+    "last_invoke": 10,
+    "last_sessions": 12,
+    "last_messages": 433,
+    "last_latency_s": 8.6,
     "last_model": "k2p5",
     "last_skip": "stm_hash_unchanged"
   }

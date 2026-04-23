@@ -17,7 +17,7 @@
   <a href="/tax" class="nav-item">个税管理</a>
 </nav>
 <main class="content">
-  <h1>成本管理</h1>
+  <h1>成本管理 <a href="/export/costs/list" class="btn">导出CSV</a></h1>
   <form class="form-inline" action="/costs/add" method="POST">
     <div class="form-group"><label>分类</label>
       <select name="category" required>
@@ -39,7 +39,7 @@
       <tr>
         <td><%= c.id %></td><td><span class="badge badge-blue"><%= c.category %></span></td><td><%= c.subcategory||'-' %></td>
         <td>¥<%= c.amount.toFixed(2) %></td><td><%= c.pay_date||'-' %></td><td><%= c.case_name||'-' %></td><td><%= c.description||'-' %></td>
-        <td><form action="/costs/delete/<%= c.id %>" method="POST" style="display:inline" onsubmit="return confirm('确定删除？')"><button class="btn btn-danger">删除</button></form></td>
+        <td><a href="/costs/edit/<%= c.id %>" class="btn btn-primary">编辑</a> <form action="/costs/delete/<%= c.id %>" method="POST" style="display:inline" onsubmit="return confirm('确定删除？')"><button class="btn btn-danger">删除</button></form></td>
       </tr>
     <% }) %>
   </table>

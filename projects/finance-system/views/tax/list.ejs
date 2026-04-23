@@ -17,7 +17,7 @@
   <a href="/tax" class="nav-item active">个税管理</a>
 </nav>
 <main class="content">
-  <h1>个税管理</h1>
+  <h1>个税管理 <a href="/export/salaries" class="btn">导出CSV</a></h1>
   <form class="form-inline" action="/tax" method="GET">
     <div class="form-group"><label>年份</label><input name="year" type="number" value="<%= year %>"></div>
     <div class="form-group"><label>月份</label><input name="month" type="number" min="1" max="12" value="<%= month %>"></div>

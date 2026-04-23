@@ -36,4 +36,27 @@ router.post('/delete/:id', (req, res) => {
   });
 });
 
+router.get('/edit/:id', (req, res) => {
+  req.db.get('SELECT * FROM payments WHERE id = ?', [req.params.id], (err, row) => {
+    if (err) return res.status(500).send(err.message);
+    if (!row) return res.status(404).send('收款不存在');
+    req.db.all('SELECT id, name FROM cases', [], (err2, cases) => {
+      if (err2) return res.status(500).send(err2.message);
+      res.render('payments/edit', { payment: row, cases });
+    });
+  });
+});
+
+router.post('/edit/:id', (req, res) => {
+  const { case_id, amount, pay_date, method, status, description, remark } = req.body;
+  req.db.run(
+    'UPDATE payments SET case_id=?, amount=?, pay_date=?, method=?, status=?, description=?, remark=? WHERE id=?',
+    [case_id, amount, pay_date, method || '银行转账', status || '已到账', description, remark, req.params.id],
+    function(err) {
+      if (err) return res.status(500).send(err.message);
+      res.redirect('/payments');
+    }
+  );
+});
+
 module.exports = router;

@@ -17,7 +17,7 @@
   <a href="/tax" class="nav-item">个税管理</a>
 </nav>
 <main class="content">
-  <h1>委托人管理</h1>
+  <h1>委托人管理 <a href="/export/clients" class="btn">导出CSV</a></h1>
   <form class="form-inline" action="/clients/add" method="POST">
     <div class="form-group"><label>委托人名称</label><input name="name" required></div>
     <div class="form-group"><label>联系人</label><input name="contact"></div>
@@ -35,7 +35,7 @@
       <tr>
         <td><%= c.id %></td><td><%= c.name %></td><td><%= c.contact||'-' %></td><td><%= c.phone||'-' %></td>
         <td><%= c.company||'-' %></td><td><%= c.id_card||'-' %></td><td><%= c.remark||'-' %></td>
-        <td><form action="/clients/delete/<%= c.id %>" method="POST" style="display:inline" onsubmit="return confirm('确定删除？')"><button class="btn btn-danger">删除</button></form></td>
+        <td><a href="/clients/edit/<%= c.id %>" class="btn btn-primary">编辑</a> <form action="/clients/delete/<%= c.id %>" method="POST" style="display:inline" onsubmit="return confirm('确定删除？')"><button class="btn btn-danger">删除</button></form></td>
       </tr>
     <% }) %>
   </table>

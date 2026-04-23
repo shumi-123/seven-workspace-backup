@@ -35,4 +35,27 @@ router.post('/delete/:id', (req, res) => {
   });
 });
 
+router.get('/edit/:id', (req, res) => {
+  req.db.get('SELECT * FROM invoices WHERE id = ?', [req.params.id], (err, row) => {
+    if (err) return res.status(500).send(err.message);
+    if (!row) return res.status(404).send('发票不存在');
+    req.db.all('SELECT id, name FROM cases', [], (err2, cases) => {
+      if (err2) return res.status(500).send(err2.message);
+      res.render('invoices/edit', { invoice: row, cases });
+    });
+  });
+});
+
+router.post('/edit/:id', (req, res) => {
+  const { case_id, invoice_no, amount, issue_date, status, type, purchaser, remark } = req.body;
+  req.db.run(
+    'UPDATE invoices SET case_id=?, invoice_no=?, amount=?, issue_date=?, status=?, type=?, purchaser=?, remark=? WHERE id=?',
+    [case_id || null, invoice_no, amount, issue_date, status || '已开具', type || '增值税普通发票', purchaser, remark, req.params.id],
+    function(err) {
+      if (err) return res.status(500).send(err.message);
+      res.redirect('/invoices');
+    }
+  );
+});
+
 module.exports = router;

@@ -63,4 +63,41 @@ router.post('/delete/:id', (req, res) => {
   });
 });
 
+router.get('/edit/:id', (req, res) => {
+  req.db.get('SELECT * FROM salaries WHERE id = ?', [req.params.id], (err, row) => {
+    if (err) return res.status(500).send(err.message);
+    if (!row) return res.status(404).send('工资记录不存在');
+    req.db.all('SELECT id, name FROM lawyers', [], (err2, lawyers) => {
+      if (err2) return res.status(500).send(err2.message);
+      res.render('salaries/edit', { salary: row, lawyers });
+    });
+  });
+});
+
+router.post('/edit/:id', (req, res) => {
+  const { lawyer_id, year, month, base_salary, commission, bonus, deduction, social_insurance, housing_fund, other_deduction, remark } = req.body;
+  
+  const bs = parseFloat(base_salary) || 0;
+  const comm = parseFloat(commission) || 0;
+  const bon = parseFloat(bonus) || 0;
+  const ded = parseFloat(deduction) || 0;
+  const si = parseFloat(social_insurance) || 0;
+  const hf = parseFloat(housing_fund) || 0;
+  const od = parseFloat(other_deduction) || 0;
+  
+  const gross = bs + comm + bon - ded;
+  const taxable = gross - si - hf - od - 5000;
+  const tax = calcTax(taxable);
+  const net = gross - si - hf - od - tax;
+  
+  req.db.run(
+    'UPDATE salaries SET lawyer_id=?, year=?, month=?, base_salary=?, commission=?, bonus=?, deduction=?, social_insurance=?, housing_fund=?, other_deduction=?, gross_salary=?, taxable_income=?, tax=?, net_salary=?, remark=? WHERE id=?',
+    [lawyer_id, year, month, bs, comm, bon, ded, si, hf, od, gross, Math.max(0, taxable), tax, net, remark, req.params.id],
+    function(err) {
+      if (err) return res.status(500).send(err.message);
+      res.redirect('/salaries');
+    }
+  );
+});
+
 module.exports = router;

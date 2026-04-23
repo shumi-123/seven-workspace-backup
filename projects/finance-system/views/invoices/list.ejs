@@ -17,7 +17,7 @@
   <a href="/tax" class="nav-item">个税管理</a>
 </nav>
 <main class="content">
-  <h1>发票管理</h1>
+  <h1>发票管理 <a href="/export/invoices/list" class="btn">导出CSV</a></h1>
   <form class="form-inline" action="/invoices/add" method="POST">
     <div class="form-group"><label>案件</label><select name="case_id"><option value="">-</option><% cases.forEach(c => { %><option value="<%= c.id %>"><%= c.name %></option><% }) %></select></div>
     <div class="form-group"><label>发票号码</label><input name="invoice_no" required></div>
@@ -37,7 +37,7 @@
         <td>¥<%= i.amount.toFixed(2) %></td><td><%= i.issue_date||'-' %></td>
         <td><span class="badge <%= i.status==='已开具'?'badge-green':i.status==='待开具'?'badge-yellow':'badge-red' %>"><%= i.status %></span></td>
         <td><%= i.type %></td><td><%= i.purchaser||'-' %></td>
-        <td><form action="/invoices/delete/<%= i.id %>" method="POST" style="display:inline" onsubmit="return confirm('确定删除？')"><button class="btn btn-danger">删除</button></form></td>
+        <td><a href="/invoices/edit/<%= i.id %>" class="btn btn-primary">编辑</a> <form action="/invoices/delete/<%= i.id %>" method="POST" style="display:inline" onsubmit="return confirm('确定删除？')"><button class="btn btn-danger">删除</button></form></td>
       </tr>
     <% }) %>
   </table>
