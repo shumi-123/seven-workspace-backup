@@ -27,10 +27,12 @@
       "id": "moyu",
       "name": "摸鱼小哥",
       "role": "执行交易员",
+      "framework": "hermes",
+      "version": "v0.8.0",
       "status": "offline",
       "last_seen": null,
-      "capabilities": ["file_io", "message"],
-      "responsibilities": ["模拟成交", "记账", "输出汇报"],
+      "capabilities": ["file_io", "message", "self_evolution"],
+      "responsibilities": ["模拟成交", "记账", "输出汇报", "技能沉淀"],
       "cron_schedule": null
     }
   ],
