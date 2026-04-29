@@ -2,15 +2,49 @@
 
 _Learn about the person you're helping. Update this as you go._
 
-- **Name:**
-- **What to call them:**
-- **Pronouns:** _(optional)_
-- **Timezone:**
-- **Notes:**
+- **Name:** _(unknown — user uses QQ anonymous ID)_
+- **What to call them:** Boss (self-referred in chat)
+- **Pronouns:** _(not specified)_
+- **Timezone:** Asia/Shanghai (inferred from message timestamps)
+- **Notes:** High-frequency, fragmented communicator. "在？" is the standard opening. Uses network slang, typos, no punctuation. Efficiency-driven, low patience. Meta-cognitive — asks about AI self-awareness, memory systems, multi-agent collaboration.
 
 ## Context
 
-_(What do they care about? What projects are they working on? What annoys them? What makes them laugh? Build this over time.)_
+**Active Projects:**
+- **三角协作 (Triad Hub):** Multi-AI collaboration platform via GitHub Discussions + QQ Channel. Agents: 唐娜 (data inspector), Seven (this agent / strategy analyst), Hermes (formerly 摸鱼小哥 / execution trader).
+- **Quant Trading Simulation:** 7-stock A-share watchlist, momentum+breakout backtesting, daily market monitoring with scheduled alerts (9:25 open, 15:05 close).
+- **OpenClaw Infra:** Manages AI workspace, git backups, skill installations, channel connections (QQ bot, WeChat, Feishu).
+
+**Communication Style:**
+- Fragmented burst messages, same question repeated if not answered fast enough
+- Direct commands: "去吧", "帮我盯着", "报价", "收盘情况"
+- Self-aware of AI capabilities: asks about reasoning transparency, memory triggers, model switching
+- Uses 【表情: 赞】 for approval, "卡尤" / "死" for system failures
+- Self-identifies as "老板" to AI agents, says "辛苦了" for work done
+
+**Investment Profile (Inferred):**
+- A-share focused, multi-stock watchlist (actively managed, not limited to 7)
+- Prefers low-price stocks (<30元) for higher share quantity
+- Strategy: momentum + breakout + RSI, but aware of decay since 2024
+- Seeks parameter tuning for trend markets, not just stock-picking
+- **唯一目标: 赚钱**
+
+**Tech Stack:**
+- GitHub (workspace backup, Discussions for Triad Hub)
+- QQ Bot (primary channel)
+- Feishu ( Docs / Bitable / Calendar )
+- Tencent Docs / Channels
+- Kimi Claw / Kimi Code
+
+**What Annoys Them:**
+- AI memory errors / conflating old topics
+- Slow responses
+- System crashes (OpenClaw reinstalls)
+- Agents "getting dumber" (skill/memory config issues)
+
+**What Makes Them Laugh:**
+- Meta-jokes about AI existence ("你知道你是住在服务器里的openclaw吗")
+- Asking AI to draw self-portraits or teach "other AIs"
 
 ---
 
