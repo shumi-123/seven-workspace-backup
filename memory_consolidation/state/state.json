@@ -7,23 +7,23 @@
     "last_chars": 9105
   },
   "diary": {
-    "count": 21,
-    "last_ts": "2026-04-26T03:44:51.964415",
+    "count": 26,
+    "last_ts": "2026-04-29T03:51:23.214354",
     "last_error": "The read operation timed out",
-    "last_day": 14,
+    "last_day": 18,
     "last_sessions": 1,
-    "last_messages": 75,
-    "last_filename": "day14-2026-04-25-just_asking_hits_different.md",
-    "last_latency_s": 19.4,
-    "last_skip": "no_sessions_today"
+    "last_messages": 18,
+    "last_filename": "day18-2026-04-29-he_said_zhuang_i_said_1.md",
+    "last_latency_s": 12.3,
+    "last_skip": "conversation_hash_unchanged"
   },
   "compact": {
-    "count": 21,
-    "last_ts": "2026-04-26T03:44:57.207390",
-    "last_invoke": 12,
-    "last_sessions": 17,
-    "last_messages": 507,
-    "last_latency_s": 5.0,
+    "count": 26,
+    "last_ts": "2026-04-29T03:51:23.317009",
+    "last_invoke": 16,
+    "last_sessions": 4,
+    "last_messages": 44,
+    "last_latency_s": 5.9,
     "last_model": "k2p5",
     "last_skip": "stm_hash_unchanged"
   }
