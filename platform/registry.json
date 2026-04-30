@@ -24,13 +24,13 @@
       "cron_schedule": null
     },
     {
-      "id": "moyu",
-      "name": "摸鱼小哥",
+      "id": "eight",
+      "name": "Eight",
       "role": "执行交易员",
       "framework": "hermes",
       "version": "v0.8.0",
-      "status": "offline",
-      "last_seen": null,
+      "status": "online",
+      "last_seen": "2026-04-30T08:40:55+08:00",
       "capabilities": ["file_io", "message", "self_evolution"],
       "responsibilities": ["模拟成交", "记账", "输出汇报", "技能沉淀"],
       "cron_schedule": null

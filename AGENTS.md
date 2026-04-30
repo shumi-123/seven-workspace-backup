@@ -34,7 +34,7 @@ When the user refers to "三角协作"、"唐娜"、"摸鱼小哥"、"多AI协�
 |-------|------|---------|-------|--------|
 | 唐娜 (tangna) | 数据巡检员 | cron/heartbeat | watchlist, external feeds | bus.jsonl (alerts) |
 | Seven (seven) | 策略分析员 | on message | bus.jsonl (alerts) | bus.jsonl (signals) |
-| 摸鱼小哥 (moyu) | 执行交易员 | on message | bus.jsonl (signals) | bus.jsonl (trades), user channel |
+| Eight (eight) | 执行交易员 | on message | bus.jsonl (signals) | bus.jsonl (trades), user channel |
 
 ### Communication Protocol
 
