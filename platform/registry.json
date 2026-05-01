@@ -7,10 +7,18 @@
       "id": "tangna",
       "name": "唐娜",
       "role": "数据巡检员",
-      "status": "offline",
-      "last_seen": null,
-      "capabilities": ["web_search", "web_fetch", "kimi_finance"],
-      "responsibilities": ["监控行情", "发现异动", "创建任务"],
+      "status": "online",
+      "last_seen": "2026-05-01T19:13:23+08:00",
+      "capabilities": [
+        "web_search",
+        "web_fetch",
+        "kimi_finance"
+      ],
+      "responsibilities": [
+        "监控行情",
+        "发现异动",
+        "创建任务"
+      ],
       "cron_schedule": "*/15 * * * *"
     },
     {
@@ -19,8 +27,14 @@
       "role": "策略分析员",
       "status": "online",
       "last_seen": "2026-04-23T16:45:00+08:00",
-      "capabilities": ["all_tools"],
-      "responsibilities": ["技术分析", "生成信号", "策略复盘"],
+      "capabilities": [
+        "all_tools"
+      ],
+      "responsibilities": [
+        "技术分析",
+        "生成信号",
+        "策略复盘"
+      ],
       "cron_schedule": null
     },
     {
@@ -30,16 +44,34 @@
       "framework": "hermes",
       "version": "v0.8.0",
       "status": "online",
-      "last_seen": "2026-04-30T08:40:55+08:00",
-      "capabilities": ["file_io", "message", "self_evolution"],
-      "responsibilities": ["模拟成交", "记账", "输出汇报", "技能沉淀"],
+      "last_seen": "2026-05-01T19:10:12.313138+08:00",
+      "capabilities": [
+        "file_io",
+        "message",
+        "self_evolution"
+      ],
+      "responsibilities": [
+        "模拟成交",
+        "记账",
+        "输出汇报",
+        "技能沉淀"
+      ],
       "cron_schedule": null
     }
   ],
   "channels": {
-    "trading": {"description": "交易相关消息", "last_msg_id": 0},
-    "general": {"description": "一般协作消息", "last_msg_id": 0},
-    "alerts": {"description": "紧急告警", "last_msg_id": 0}
+    "trading": {
+      "description": "交易相关消息",
+      "last_msg_id": 0
+    },
+    "general": {
+      "description": "一般协作消息",
+      "last_msg_id": 0
+    },
+    "alerts": {
+      "description": "紧急告警",
+      "last_msg_id": 0
+    }
   },
   "rules": {
     "max_msg_retention_days": 7,
