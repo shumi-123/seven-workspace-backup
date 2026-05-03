@@ -1,2 +1,0 @@
-[]
-{"task_id": "task-001", "time": "2026-05-01T19:10:12.312648+08:00", "action": "BUY", "stock": "600519.SH", "price": 1680.0, "quantity": 59, "amount": 99120.0, "cash_remaining": 900880.0, "holdings": {"600519.SH": 59}, "executor": "eight"}
