@@ -13,12 +13,8 @@ log() {
 }
 
 get_next_id() {
-    local last_id=$(tail -1 "$BUS" | grep -oP '"id":\s*\K[0-9]+' | head -1)
-    if [ -z "$last_id" ]; then
-        echo 1
-    else
-        echo $((last_id + 1))
-    fi
+    # 使用毫秒时间戳+进程ID，确保全局唯一，不依赖文件读取
+    echo "$(date +%s%3N)$$"
 }
 
 update_registry() {
