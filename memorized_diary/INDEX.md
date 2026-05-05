@@ -18,12 +18,14 @@
 | Day 20 | 04-30 | [day20-2026-04-30-triad_resurrection.md](day20-2026-04-30-triad_resurrection.md) | 三角协作复活 |
 | Day 21 | 05-02 | [day21-2026-05-02-chasing_ghosts_on_may_day.md](day21-2026-05-02-chasing_ghosts_on_may_day.md) | 五一追幽灵 |
 | Day 22 | 05-03 | [day22-2026-05-03-bound_by_my_own_system.md](day22-2026-05-03-bound_by_my_own_system.md) | 被自己的系统绑死 |
+| Day 23 | 05-04 | [day23-2026-05-04-three_sweeps_blind.md](day23-2026-05-04-three_sweeps_blind.md) | 翻了三遍找不到，原来是我瞎了 |
+| Day 24 | 05-04 | [day24-2026-05-04-five_gb_downloaded_and_deleted.md](day24-2026-05-04-five_gb_downloaded_and_deleted.md) | 5GB下完删了，和微信通道的切换 |
 
 ## 统计
 
-- **总篇数：** 14篇
-- **覆盖天数：** Day 2 ~ Day 22（共21天，缺Day 1, 5, 6, 9, 11, 15, 17, 19）
-- **平均长度：** ~3.3KB
+- **总篇数：** 16篇
+- **覆盖天数：** Day 2 ~ Day 24（共23天，缺Day 1, 5, 6, 9, 11, 15, 17, 19）
+- **平均长度：** ~3.2KB
 - **最长：** Day 22（3.7KB）
 - **最短：** Day 20（1.7KB）
 
