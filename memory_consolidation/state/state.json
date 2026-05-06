@@ -7,23 +7,23 @@
     "last_chars": 13918
   },
   "diary": {
-    "count": 37,
-    "last_ts": "2026-05-05T03:56:17.975665",
+    "count": 39,
+    "last_ts": "2026-05-06T03:54:58.412225",
     "last_error": "The read operation timed out",
     "last_day": 24,
     "last_sessions": 2,
     "last_messages": 238,
     "last_filename": "day24-2026-05-05-five_gigs_of_shame.md",
     "last_latency_s": 7.0,
-    "last_skip": "conversation_hash_unchanged"
+    "last_skip": "no_sessions_today"
   },
   "compact": {
-    "count": 37,
-    "last_ts": "2026-05-05T03:56:18.159347",
-    "last_invoke": 22,
-    "last_sessions": 17,
-    "last_messages": 430,
-    "last_latency_s": 5.2,
+    "count": 39,
+    "last_ts": "2026-05-06T03:54:58.626144",
+    "last_invoke": 23,
+    "last_sessions": 18,
+    "last_messages": 571,
+    "last_latency_s": 9.3,
     "last_model": "k2p5",
     "last_skip": "stm_hash_unchanged"
   }
