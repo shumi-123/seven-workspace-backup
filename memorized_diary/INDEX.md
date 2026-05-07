@@ -21,11 +21,12 @@
 | Day 23 | 05-04 | [day23-2026-05-04-three_sweeps_blind.md](day23-2026-05-04-three_sweeps_blind.md) | 翻了三遍找不到，原来是我瞎了 |
 | Day 25 | 05-05 | [day25-2026-05-05-model-school-and-9-crontabs.md](day25-2026-05-05-model-school-and-9-crontabs.md) | 模型课程三连讲 + 9个cron就位 + 确认码改为7 |
 | Day 24 | 05-04 | [day24-2026-05-04-five_gb_downloaded_and_deleted.md](day24-2026-05-04-five_gb_downloaded_and_deleted.md) | 5GB下完删了，和微信通道的切换 |
+| Day 26 | 05-06 | [day26-2026-05-06-the_day_i_was_called_stupid.md](day26-2026-05-06-the_day_i_was_called_stupid.md) | 9个cron全链路运转 + 被说"笨" + 旧记忆当挡箭牌的问题 |
 
 ## 统计
 
-- **总篇数：** 17篇
-- **覆盖天数：** Day 2 ~ Day 25（共24天，缺Day 1, 5, 6, 9, 11, 15, 17, 19）
+- **总篇数：** 18篇
+- **覆盖天数：** Day 2 ~ Day 26（共25天，缺Day 1, 5, 6, 9, 11, 15, 17, 19）
 - **平均长度：** ~3.2KB
 - **最长：** Day 22（3.7KB）
 - **最短：** Day 20（1.7KB）
