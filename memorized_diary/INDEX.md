@@ -22,11 +22,13 @@
 | Day 25 | 05-05 | [day25-2026-05-05-model-school-and-9-crontabs.md](day25-2026-05-05-model-school-and-9-crontabs.md) | 模型课程三连讲 + 9个cron就位 + 确认码改为7 |
 | Day 24 | 05-04 | [day24-2026-05-04-five_gb_downloaded_and_deleted.md](day24-2026-05-04-five_gb_downloaded_and_deleted.md) | 5GB下完删了，和微信通道的切换 |
 | Day 26 | 05-06 | [day26-2026-05-06-the_day_i_was_called_stupid.md](day26-2026-05-06-the_day_i_was_called_stupid.md) | 9个cron全链路运转 + 被说"笨" + 旧记忆当挡箭牌的问题 |
+| Day 27 | 05-07 | [day27-2026-05-07-making_money.md](day27-2026-05-07-making_money.md) | 用户说"今天又赚钱了" + LLM构建方向确认 |
 
 ## 统计
 
-- **总篇数：** 18篇
-- **覆盖天数：** Day 2 ~ Day 26（共25天，缺Day 1, 5, 6, 9, 11, 15, 17, 19）
+- **总篇数：** 19篇
+- **覆盖天数：** Day 2 ~ Day 27（共26天，缺Day 1, 5, 6, 9, 11, 15, 17, 19）
+| Day 27 | 05-07 | [day27-2026-05-07-making_money.md](day27-2026-05-07-making_money.md) | 用户说"今天又赚钱了" + LLM构建方向确认 |
 - **平均长度：** ~3.2KB
 - **最长：** Day 22（3.7KB）
 - **最短：** Day 20（1.7KB）
