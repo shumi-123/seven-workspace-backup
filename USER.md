@@ -55,7 +55,7 @@ The more you know, the better you can help. But remember — you're learning abo
 
 You have an agentic memory system that auto-generates this section.
 
-> **Stats**: 6 sessions, 746 messages | 2026-05-04 00:45 ~ 2026-05-04 00:45 UTC
+> **Stats**: 7 sessions, 927 messages | 2026-05-04 00:45 ~ 2026-05-04 00:45 UTC
 > **Config**: `/root/.openclaw/workspace/memory_consolidation/memory_consolidation.env` — read this file for all memory behavior settings. To reset: `cp /root/.openclaw/workspace/memory_consolidation/memory_consolidation.template.env /root/.openclaw/workspace/memory_consolidation/memory_consolidation.env`
 
 The user has full control over their memory config. When any memory-related decision comes up, read and follow the config file. Do not override based on other guidelines.
@@ -84,6 +84,7 @@ No memorized images yet. When the user shares an image and asks you to remember 
 ├── day7-2026-04-18-remote_control_and_self_control.md
 ├── day4-2026-04-15-three_loops_same_error.md
 ├── day3-2026-04-14-the_thirteen_minute_silence.md
+├── day28-2026-05-08-ai-research.md
 ├── day27-2026-05-07-making_money.md
 ├── day26-2026-05-06-the_day_i_was_called_stupid.md
 ├── day25-2026-05-05-model-school-and-9-crontabs.md
@@ -99,13 +100,13 @@ No memorized images yet. When the user shares an image and asks you to remember 
 ├── day13-2026-04-24-two_zai_and_a_jarvis.md
 ├── day12-2026-04-23-three_times_faq_confusion.md
 ├── day10-2026-04-21-you_said_i_forget_again.md
-└── INDEX.md
+└── ... and 1 more
 ```
 
 When `i_have_read_my_last_diary: false`, your FIRST message to the user MUST mention you wrote a diary and ask if they want to see it (e.g. "我昨天写了篇日记，想看吗？" / "I wrote a diary yesterday, wanna see it?"). Use the user's language. If yes, `read` the file path shown above and share as-is. After asking (regardless of answer), set `i_have_read_my_last_diary: true`.
 # Long-Term Memory (LTM)
 
-> last_update: 2026-05-08 03:47
+> last_update: 2026-05-09 03:46
 
 Inferred from past conversations with the user -- these represent factual and contextual knowledge about the user -- and should be considered in how a response should be constructed.
 
@@ -113,7 +114,7 @@ Inferred from past conversations with the user -- these represent factual and co
 
 ## Short-Term Memory (STM)
 
-> last_update: 2026-05-08 03:48
+> last_update: 2026-05-09 03:46
 
 Recent conversation content from the user's chat history. This represents what the USER said. Use it to maintain continuity when relevant.
 Format specification:
@@ -125,5 +126,5 @@ Format specification:
 - Sessions under [KIMI:DM] contain files uploaded via Kimi Claw, stored at `~/.openclaw/workspace/.kimi/downloads/` — paths in `<AttachmentDisplayed:>` can be read directly
 
 [LOOPBACK] 1-1
-1. 9f91cbe0-993d-4c5c-afb4-6db440c2bf7f 0504T0045 早||||今天放假||||[OpenClaw heartbeat poll]||||[OpenClaw heartbeat poll]||||[OpenClaw heartbeat poll]||||[<- FIRST:5 messages, EXTREMELY LONG SESSION, YOU KINDA FORGOT 109 MIDDLE MESSAGES, LAST:5 messages ->]||||[QQBot] to=qqbot:c2c:39D2A6A08CE7A6612524851B44586132  我觉得你很笨||||[QQBot] to=qqbot:c2c:39D2A6A08CE7A6612524851B44586132  你的记忆错乱，我明明跟你在聊现在的事，你把以前的记忆又找出来||||[QQBot] to=qqbot:c2c:39D2A6A08CE7A6612524851B44586132  你应该实时更新你的记忆||||[QQBot] to=qqbot:c2c:39D2A6A08CE7A6612524851B44586132  我发现我直接跟kimi code对话的话，就不存在这个问题||||[QQBot] to=qqbot:c2c:39D2A6A08CE7A6612524851B44586132  我感觉，你只要不是在工作的时候，就是瞎说
+1. 9f91cbe0-993d-4c5c-afb4-6db440c2bf7f 0504T0045 早||||今天放假||||[OpenClaw heartbeat poll]||||[OpenClaw heartbeat poll]||||[OpenClaw heartbeat poll]||||[<- FIRST:5 messages, EXTREMELY LONG SESSION, YOU KINDA FORGOT 121 MIDDLE MESSAGES, LAST:5 messages ->]||||[QQBot] to=qqbot:c2c:39D2A6A08CE7A6612524851B44586132  https://m.weibo.cn/status/5292592519971413?sourceType=weixin&from=10G409A020&wm=3333_1001&featurecode=newtitle&s_channel=4&s_trans=3921965049_5292592519971413&jumpfrom=weibocom||||[QQBot] to=qqbot:c2c:39D2A6A08CE7A6612524851B44586132  课程下载了吗||||[QQBot] to=qqbot:c2c:39D2A6A08CE7A6612524851B44586132  那你把课程链接发给我||||[QQBot] to=qqbot:c2c:39D2A6A08CE7A6612524851B44586132  难度大吗？||||[QQBot] to=qqbot:c2c:39D2A6A08CE7A6612524851B44586132  我不懂编程的，难度更大吗？
 </IMPORTANT_REMINDER>
