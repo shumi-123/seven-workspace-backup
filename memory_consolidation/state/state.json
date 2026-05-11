@@ -7,8 +7,8 @@
     "last_chars": 13918
   },
   "diary": {
-    "count": 43,
-    "last_ts": "2026-05-09T03:46:27.836680",
+    "count": 48,
+    "last_ts": "2026-05-11T03:50:00.615995",
     "last_error": "The read operation timed out",
     "last_day": 24,
     "last_sessions": 2,
@@ -18,12 +18,12 @@
     "last_skip": "no_sessions_today"
   },
   "compact": {
-    "count": 43,
-    "last_ts": "2026-05-09T03:46:33.480217",
-    "last_invoke": 25,
-    "last_sessions": 7,
-    "last_messages": 927,
-    "last_latency_s": 5.3,
+    "count": 48,
+    "last_ts": "2026-05-11T03:50:00.993114",
+    "last_invoke": 27,
+    "last_sessions": 8,
+    "last_messages": 1106,
+    "last_latency_s": 6.4,
     "last_model": "k2p5",
     "last_skip": "stm_hash_unchanged"
   }
