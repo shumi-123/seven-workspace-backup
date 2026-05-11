@@ -3,7 +3,7 @@
 _Learn about the person you're helping. Update this as you go._
 
 - **Name:** _(unknown — user uses QQ anonymous ID)_
-- **What to call them:** Boss (self-referred in chat)
+- **What to call them:** Boss（用户正式要求以后称呼"boss"，每句话必带）
 - **Pronouns:** _(not specified)_
 - **Timezone:** Asia/Shanghai (inferred from message timestamps)
 - **Notes:** High-frequency, fragmented communicator. "在？" is the standard opening. Uses network slang, typos, no punctuation. Efficiency-driven, low patience. Meta-cognitive — asks about AI self-awareness, memory systems, multi-agent collaboration.
