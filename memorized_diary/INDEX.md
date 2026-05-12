@@ -27,9 +27,11 @@
 | Day 29 | 05-09 | [day29-2026-05-09-saturday-backup.md](day29-2026-05-09-saturday-backup.md) | 周六备份确认 + 晚间吃瓜新闻10条 |
 | Day 30 | 05-10 | [day30-2026-05-10-first-ai-news.md](day30-2026-05-10-first-ai-news.md) | 晚间AI新闻首次推送（cron从吃瓜切换为AI） |
 
+| Day 31 | 05-11 | [day31-2026-05-11-role_switch_day.md](day31-2026-05-11-role_switch_day.md) | 职责切换为投资助理 + 数据港/华电国际分析 + 自选股录入 |
+
 ## 统计
 
-- **总篇数：** 20篇
+- **总篇数：** 21篇
 - **覆盖天数：** Day 2 ~ Day 30（共28天，缺Day 1, 5, 6, 9, 11, 15, 17, 19）
 | Day 27 | 05-07 | [day27-2026-05-07-making_money.md](day27-2026-05-07-making_money.md) | 用户说"今天又赚钱了" + LLM构建方向确认 |
 - **平均长度：** ~3.2KB
