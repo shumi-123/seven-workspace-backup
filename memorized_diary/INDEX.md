@@ -27,6 +27,7 @@
 | Day 29 | 05-09 | [day29-2026-05-09-saturday-backup.md](day29-2026-05-09-saturday-backup.md) | 周六备份确认 + 晚间吃瓜新闻10条 |
 | Day 30 | 05-10 | [day30-2026-05-10-first-ai-news.md](day30-2026-05-10-first-ai-news.md) | 晚间AI新闻首次推送（cron从吃瓜切换为AI） |
 
+| Day 32 | 05-12 | [day32-2026-05-12-power_defense_day.md](day32-2026-05-12-power_defense_day.md) | 电力防御日，数据港跌电力红 |
 | Day 31 | 05-11 | [day31-2026-05-11-role_switch_day.md](day31-2026-05-11-role_switch_day.md) | 职责切换为投资助理 + 数据港/华电国际分析 + 自选股录入 |
 
 ## 统计
