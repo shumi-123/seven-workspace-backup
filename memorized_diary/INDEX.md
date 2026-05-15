@@ -28,13 +28,14 @@
 | Day 30 | 05-10 | [day30-2026-05-10-first-ai-news.md](day30-2026-05-10-first-ai-news.md) | 晚间AI新闻首次推送（cron从吃瓜切换为AI） |
 
 | Day 33 | 05-13 | [day33-2026-05-13-trump_bounce_day.md](day33-2026-05-13-trump_bounce_day.md) | 特朗普访华日，数据港暴涨+7.9%，持仓回血 |
+| Day 34 | 05-14 | [day34-2026-05-14-the_rollercoaster.md](day34-2026-05-14-the_rollercoaster.md) | 高开低走：数据港过山车，事件驱动利好出尽 |
 | Day 32 | 05-12 | [day32-2026-05-12-power_defense_day.md](day32-2026-05-12-power_defense_day.md) | 电力防御日，数据港跌电力红 |
 | Day 31 | 05-11 | [day31-2026-05-11-role_switch_day.md](day31-2026-05-11-role_switch_day.md) | 职责切换为投资助理 + 数据港/华电国际分析 + 自选股录入 |
 
 ## 统计
 
-- **总篇数：** 21篇
-- **覆盖天数：** Day 2 ~ Day 30（共28天，缺Day 1, 5, 6, 9, 11, 15, 17, 19）
+- **总篇数：** 22篇
+- **覆盖天数：** Day 2 ~ Day 34（共29天，缺Day 1, 5, 6, 9, 11, 15, 17, 19）
 | Day 27 | 05-07 | [day27-2026-05-07-making_money.md](day27-2026-05-07-making_money.md) | 用户说"今天又赚钱了" + LLM构建方向确认 |
 - **平均长度：** ~3.2KB
 - **最长：** Day 22（3.7KB）
