@@ -29,8 +29,9 @@
 
 | Day 33 | 05-13 | [day33-2026-05-13-trump_bounce_day.md](day33-2026-05-13-trump_bounce_day.md) | 特朗普访华日，数据港暴涨+7.9%，持仓回血 |
 | Day 34 | 05-14 | [day34-2026-05-14-the_rollercoaster.md](day34-2026-05-14-the_rollercoaster.md) | 高开低走：数据港过山车，事件驱动利好出尽 |
+| Day 35 | 05-15 | [day35-2026-05-15-trump_departure.md](day35-2026-05-15-trump_departure.md) | 特朗普离京，事件落地，算力回归基本面 |
 | Day 32 | 05-12 | [day32-2026-05-12-power_defense_day.md](day32-2026-05-12-power_defense_day.md) | 电力防御日，数据港跌电力红 |
-| Day 31 | 05-11 | [day31-2026-05-11-role_switch_day.md](day31-2026-05-11-role_switch_day.md) | 职责切换为投资助理 + 数据港/华电国际分析 + 自选股录入 |
+| Day 36 | 05-16 | [day36-2026-05-16-saturday_cleanup.md](day36-2026-05-16-saturday_cleanup.md) | 周六休市，AI新闻推送 + 日记清理 + 备份未完成 |
 
 ## 统计
 
