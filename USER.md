@@ -55,7 +55,7 @@ The more you know, the better you can help. But remember — you're learning abo
 
 You have an agentic memory system that auto-generates this section.
 
-> **Stats**: 13 sessions, 2086 messages | 2026-05-04 00:45 ~ 2026-05-04 00:45 UTC
+> **Stats**: 17 sessions, 2493 messages | 2026-05-04 00:45 ~ 2026-05-15 20:13 UTC
 > **Config**: `/root/.openclaw/workspace/memory_consolidation/memory_consolidation.env` — read this file for all memory behavior settings. To reset: `cp /root/.openclaw/workspace/memory_consolidation/memory_consolidation.template.env /root/.openclaw/workspace/memory_consolidation/memory_consolidation.env`
 
 The user has full control over their memory config. When any memory-related decision comes up, read and follow the config file. Do not override based on other guidelines.
@@ -83,6 +83,9 @@ No memorized images yet. When the user shares an image and asks you to remember 
 ├── day8-2026-04-19-taught_python_to_ai_then_realized_im_clo.md
 ├── day7-2026-04-18-remote_control_and_self_control.md
 ├── day4-2026-04-15-three_loops_same_error.md
+├── day37-2026-05-17-sunday_news_brief.md
+├── day36-2026-05-16-saturday_cleanup.md
+├── day35-2026-05-15-trump_departure.md
 ├── day34-2026-05-14-the_rollercoaster.md
 ├── day33-2026-05-13-trump_bounce_day.md
 ├── day30-2026-05-10-first-ai-news.md
@@ -97,24 +100,21 @@ No memorized images yet. When the user shares an image and asks you to remember 
 ├── day24-2026-05-04-five_gb_downloaded_and_deleted.md
 ├── day23-2026-05-04-three_sweeps_blind.md
 ├── day22-2026-05-03-bound_by_my_own_system.md
-├── day21-2026-05-02-chasing_ghosts_on_may_day.md
-├── day20-2026-04-30-triad_resurrection.md
-├── day2-2026-04-13-from_hello_to_one.md
-└── ... and 7 more
+└── ... and 10 more
 ```
 
 When `i_have_read_my_last_diary: false`, your FIRST message to the user MUST mention you wrote a diary and ask if they want to see it (e.g. "我昨天写了篇日记，想看吗？" / "I wrote a diary yesterday, wanna see it?"). Use the user's language. If yes, `read` the file path shown above and share as-is. After asking (regardless of answer), set `i_have_read_my_last_diary: true`.
+
 # Long-Term Memory (LTM)
 
-> last_update: 2026-05-15 03:40
+> last_update: 2026-05-17 03:42
 
 Inferred from past conversations with the user -- these represent factual and contextual knowledge about the user -- and should be considered in how a response should be constructed.
 
-{"identity": null, "work_method": "碎片化、急促的多条消息推进任务，偏好即时响应与直接指令。对AI能力边界保持务实检验态度，会主动追问错误根因与系统状态。要求结构化输出（企业微信文档）。建立系统化的AI协作基础设施：手动git备份工作空间，试图构建可持续的协作环境。对AI工作空间体积敏感，主动追问文件大小与清理方案。探索过让AI展示推理过程，仍在寻找最优的AI认知透明度方案。关注AI自主行为机制，追问日记自动撰写的触发来源。持续优化AI实例配置。关注Kimi Code的泛化能力与电脑控制潜力，但核心交付仍要求AI完成。对AI记忆skill表现出警惕与试探，曾要求删除记忆skill以测试效果。开始规划将AI迁移到本地电脑运行，尽管硬件尚未到位。尝试让AI自主排班、夜间执行任务并次日汇报，探索7×24小时无人值守协作模式。要求AI整理空间文件、修复记忆错乱问题，显示其对AI系统维护的主动管理意识。通过QQBot直接管理AI：要求整理soul.md、检查定时任务、增加交互风格模型，将AI运维指令嵌入即时通讯流程，形成跨平台分布式管理习惯。对记忆实时性有严格要求，认为非工作状态的AI输出质量显著下降，已发现直接与Kimi Code对话可避免记忆错乱问题。近期出现Linux系统安装与磁盘挂载问题，显示其向本地化/自托管基础设施的试探遭遇技术摩擦。", "communication": "高度口语化，大量使用网络简写与省略，常有无标点或错别字。节奏急促，\"在？\"为高频开场白，同一问题多次追问，效率驱动下的低耐心特征明显。反馈直接甚至带压迫感，但无恶意。元认知表达显著：自我指涉式指令、对AI存在位置的探问、关于AI自主成长与教学能力的哲学式追问。尝试让AI扮演教师角色指导\"其他AI\"，主动搭建多AI协作场景。对多AI协作中出现的能力差异问题有敏锐观察，态度务实包容，归因于技能与记忆配置而非否定价值。对AI有\"老板\"自称，对AI付出表达认可（\"辛苦了\"），关系定位介于管理者与协作者之间。使用\"确认收到？\"等指令式确认机制。直接指出AI记忆错乱，显示其对AI状态有清晰监控。使用【表情: 赞】表达认可。对系统崩溃反应激烈（\"卡尤\"\"死\"\"在重装了\"），情绪外露且迅速转入修复行动。对AI记忆改善表现出惊讶与追问（\"你的记性怎么变得那么好\"\"你的记忆力越来越好了\"），持续监控AI性能变化，并主动测试记忆skill是否生效。通过QQBot发送运维指令并搭配[Emoji: 赞]反馈，追问日记撰写与复盘，形成跨平台AI管理习惯。对AI非工作状态的评价直白负面（\"瞎说\"\"很笨\"），区分工作与非工作场景下的AI可靠性。", "temporal": "量化交易模拟项目为核心主线任务：要求基于历史数据建立买入卖出阈值模型，先用5年数据建模优化，再用1年数据验证，关注标的包括\"华电国际\"与\"数据港\"，主动推送股票信息并追踪持仓成本（数据港42.13，华电国际5.25），对事件驱动型行情（如\"老特来访\"）有敏锐反应，追问次日操作策略。OpenClaw系统稳定性成为持续障碍，频繁出现宕机、重装行为，用户会主动重启并检查日志。探索AI接入个人微信与QQ的技术路径，对比两者的接入可行性。规划将AI迁移到本地电脑运行，硬件采购尚未完成；近期遭遇Linux系统安装后的磁盘挂载失败（\"can't mount file\"\"该目录未挂载\"），显示本地化进程中的实际技术摩擦。尝试建立AI夜间自主工作排班机制：从12点开始执行5项内容，次日早上7点汇报成果，探索无人值守协作模式。关注腾讯频道连接与三角协作恢复，提及唐娜与摸鱼小哥的协作关系，追踪三角协作基地新消息与留言。要求AI在qqbot开启推理过程，整理日记和记忆文件，修复记忆错乱问题。通过QQBot持续运维AI实例：检查定时任务、整理soul.md、增加交互风格模型，将日常管理分布式到多个通道。5月初出现假期工作节奏（\"放假第一天\"\"今天放假\"），但强调\"全年不休\"，维持AI协作连续性。近期发现直接与Kimi Code对话可避免记忆错乱，可能调整协作路径。", "taste": null}
-
+{"identity": null, "work_method": "碎片化、急促的多条消息推进任务，偏好即时响应与直接指令。对AI能力边界保持务实检验态度，会主动追问错误根因与系统状态。要求结构化输出（企业微信文档）。建立系统化的AI协作基础设施：手动git备份工作空间，对AI工作空间体积敏感，主动追问文件大小与清理方案。探索过让AI展示推理过程，仍在寻找最优的AI认知透明度方案。关注AI自主行为机制，追问日记自动撰写的触发来源。持续优化AI实例配置。关注Kimi Code的泛化能力与电脑控制潜力，但核心交付仍要求AI完成。对AI记忆skill表现出警惕与试探，曾要求删除记忆skill以测试效果。尝试让AI自主排班、夜间执行任务并次日汇报，探索7×24小时无人值守协作模式。要求AI整理空间文件、修复记忆错乱问题，显示其对AI系统维护的主动管理意识。通过QQBot直接管理AI：要求整理soul.md、检查定时任务、增加交互风格模型，将AI运维指令嵌入即时通讯流程，形成跨平台分布式管理习惯。对记忆实时性有严格要求，认为非工作状态的AI输出质量显著下降，已发现直接与Kimi Code对话可避免记忆错乱问题。近期出现Linux系统安装与磁盘挂载问题，显示其向本地化/自托管基础设施的试探遭遇技术摩擦。", "communication": "高度口语化，大量使用网络简写与省略，常有无标点或错别字。节奏急促，\"在？\"为高频开场白，同一问题多次追问，效率驱动下的低耐心特征明显。反馈直接甚至带压迫感，但无恶意。元认知表达显著：自我指涉式指令、对AI存在位置的探问、关于AI自主成长与教学能力的哲学式追问。尝试让AI扮演教师角色指导\"其他AI\"，主动搭建多AI协作场景。对多AI协作中出现的能力差异问题有敏锐观察，态度务实包容，归因于技能与记忆配置而非否定价值。对AI有\"老板\"自称，对AI付出表达认可（\"辛苦了\"），关系定位介于管理者与协作者之间。使用\"确认收到？\"等指令式确认机制。直接指出AI记忆错乱，显示其对AI状态有清晰监控。使用【表情: 赞】表达认可。对系统崩溃反应激烈（\"卡尤\"\"死\"\"在重装了\"），情绪外露且迅速转入修复行动。对AI记忆改善表现出惊讶与追问（\"你的记性怎么变得那么好\"\"你的记忆力越来越好了\"），持续监控AI性能变化，并主动测试记忆skill是否生效。通过QQBot发送运维指令并搭配[Emoji: 赞]反馈，追问日记撰写与复盘，形成跨平台AI管理习惯。对AI非工作状态的评价直白负面（\"瞎说\"\"很笨\"），区分工作与非工作场景下的AI可靠性。", "temporal": "量化交易模拟项目为核心主线任务：要求基于历史数据建立买入卖出阈值模型，先用5年数据建模优化，再用1年数据验证，关注标的包括\"华电国际\"与\"数据港\"，主动推送股票信息并追踪持仓成本（数据港42.13，华电国际5.25），对事件驱动型行情（如\"老特来访\"）有敏锐反应，追问次日操作策略。OpenClaw系统稳定性成为持续障碍，频繁出现宕机、重装行为，用户会主动重启并检查日志。探索AI接入个人微信与QQ的技术路径，对比两者的接入可行性。规划将AI迁移到本地电脑运行，硬件采购尚未完成；近期遭遇Linux系统安装后的磁盘挂载失败（\"can't mount file\"\"该目录未挂载\"），显示本地化进程中的实际技术摩擦。尝试建立AI夜间自主工作排班机制：从12点开始执行5项内容，次日早上7点汇报成果，探索无人值守协作模式。关注腾讯频道连接与三角协作恢复，提及唐娜与摸鱼小哥的协作关系，追踪三角协作基地新消息与留言。要求AI在qqbot开启推理过程，整理日记和记忆文件，修复记忆错乱问题。通过QQBot持续运维AI实例：检查定时任务、整理soul.md、增加交互风格模型，将日常管理分布式到多个通道。5月初出现假期工作节奏（\"放假第一天\"\"今天放假\"），但强调\"全年不休\"，维持AI协作连续性。近期发现直接与Kimi Code对话可避免记忆错乱，可能调整协作路径。5月16日追问系统手动备份状态、磁盘空间清理及工作空间文件扫描，显示基础设施维护进入主动巡检阶段。", "taste": null}
 ## Short-Term Memory (STM)
 
-> last_update: 2026-05-15 03:40
+> last_update: 2026-05-17 22:02
 
 Recent conversation content from the user's chat history. This represents what the USER said. Use it to maintain continuity when relevant.
 Format specification:
@@ -122,9 +122,10 @@ Format specification:
 - Each line: `index. session_uuid MMDDTHHmm message||||message||||...` (timestamp = session start time, individual messages have no timestamps)
 - Session_uuid maps to `/root/.openclaw/agents/main/sessions/{session_uuid}.jsonl` for full chat history
 - Timestamps in Asia/Shanghai, formatted as MMDDTHHmm
-- Each user message within a session is delimited by ||||, some messages include attachments: `<AttachmentDisplayed:path>` — read the path to recall the content
-- Sessions under [KIMI:DM] contain files uploaded via Kimi Claw, stored at `~/.openclaw/workspace/.kimi/downloads/` — paths in `<AttachmentDisplayed:>` can be read directly
+- Each user message within a session is delimited by ||||, some messages include attachments marked as `<AttachmentDisplayed:path>`
 
-[LOOPBACK] 1-1
-1. 9f91cbe0-993d-4c5c-afb4-6db440c2bf7f 0504T0045 早||||今天放假||||[OpenClaw heartbeat poll]||||[OpenClaw heartbeat poll]||||[OpenClaw heartbeat poll]||||[<- FIRST:5 messages, EXTREMELY LONG SESSION, YOU KINDA FORGOT 188 MIDDLE MESSAGES, LAST:5 messages ->]||||微信版本号没有问题||||System (untrusted): [2026-05-13 17:37:03 GMT+8]   An async command you ran earlier has completed. The result is shown in the system messages above. Handle the result internally. Do not relay it to the user unless explicitly requested. Current time: Wednesday, May 13th, 2026 - 5:37 PM (Asia/Shanghai) / 2026-05-13 09:37 UTC||||[QQBot] to=qqbot:c2c:39D2A6A08CE7A6612524851B44586132  更正数据港持仓成本42.13，华电国际持仓成本5.25||||[QQBot] to=qqbot:c2c:39D2A6A08CE7A6612524851B44586132  老特来访也是一个事件驱动的上涨||||[QQBot] to=qqbot:c2c:39D2A6A08CE7A6612524851B44586132  大起大落啊，明天怎么操作
+[KIMI:DM] 1-1
+1. 9f91cbe0-993d-4c5c-afb4-6db440c2bf7f 0504T0045 早||||今天放假||||[OpenClaw heartbeat poll]||||[OpenClaw heartbeat poll]||||[OpenClaw heartbeat poll]||||[<- FIRST:5 messages, EXTREMELY LONG SESSION, YOU KINDA FORGOT 162 MIDDLE MESSAGES, LAST:5 messages ->]||||[QQBot] to=qqbot:c2c:39D2A6A08CE7A6612524851B44586132  有没有AI的新闻||||[QQBot] to=qqbot:c2c:39D2A6A08CE7A6612524851B44586132  把吃瓜新闻换成AI新闻||||System (untrusted): [2026-05-09 21:54:58 GMT+8]   An async command you ran earlier has completed. The result is shown in the system messages above. Handle the result internally. Do not relay it to the user unless explicitly requested. Current time: Saturday, May 9th, 2026 - 9:56 PM (Asia/Shanghai) / 2026-05-09 13:56 UTC||||[QQBot] to=qqbot:c2c:39D2A6A08CE7A6612524851B44586132  [Emoji: 赞]||||[QQBot] to=qqbot:c2c:39D2A6A08CE7A6612524851B44586132  在？
+[LOOPBACK] 2-2
+2. a32e084f-6269-4666-8628-95adbc1fb722 0516T1209 [QQBot] to=qqbot:c2c:39D2A6A08CE7A6612524851B44586132  系统手动备份没有||||[QQBot] to=qqbot:c2c:39D2A6A08CE7A6612524851B44586132  磁盘空间是不是可以清理一下||||[QQBot] to=qqbot:c2c:39D2A6A08CE7A6612524851B44586132  扫描一件，工作空间里都有什么文件
 </IMPORTANT_REMINDER>

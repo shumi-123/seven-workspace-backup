@@ -1,29 +1,29 @@
 {
   "stm": {
-    "count": 18,
-    "last_ts": "2026-05-04T10:40:33.308429",
-    "last_sessions": 16,
-    "last_messages": 331,
-    "last_chars": 13918
+    "count": 19,
+    "last_ts": "2026-05-17T22:02:58.267337",
+    "last_sessions": 17,
+    "last_messages": 2493,
+    "last_chars": 9668
   },
   "diary": {
-    "count": 58,
-    "last_ts": "2026-05-16T03:53:26.099121",
+    "count": 63,
+    "last_ts": "2026-05-18T03:58:14.332872",
     "last_error": "The read operation timed out",
     "last_day": 24,
     "last_sessions": 2,
-    "last_messages": 238,
+    "last_messages": 2,
     "last_filename": "day24-2026-05-05-five_gigs_of_shame.md",
     "last_latency_s": 7.0,
-    "last_skip": "no_sessions_today"
+    "last_skip": "messages<3"
   },
   "compact": {
-    "count": 58,
-    "last_ts": "2026-05-16T03:53:26.995703",
-    "last_invoke": 28,
-    "last_sessions": 13,
-    "last_messages": 2086,
-    "last_latency_s": 24.6,
+    "count": 63,
+    "last_ts": "2026-05-18T03:58:15.247464",
+    "last_invoke": 29,
+    "last_sessions": 16,
+    "last_messages": 2485,
+    "last_latency_s": 10.1,
     "last_model": "k2p5",
     "last_skip": "stm_hash_unchanged"
   }

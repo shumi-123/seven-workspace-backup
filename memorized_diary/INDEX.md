@@ -31,6 +31,7 @@
 | Day 34 | 05-14 | [day34-2026-05-14-the_rollercoaster.md](day34-2026-05-14-the_rollercoaster.md) | 高开低走：数据港过山车，事件驱动利好出尽 |
 | Day 35 | 05-15 | [day35-2026-05-15-trump_departure.md](day35-2026-05-15-trump_departure.md) | 特朗普离京，事件落地，算力回归基本面 |
 | Day 32 | 05-12 | [day32-2026-05-12-power_defense_day.md](day32-2026-05-12-power_defense_day.md) | 电力防御日，数据港跌电力红 |
+| Day 37 | 05-17 | [day37-2026-05-17-sunday_news_brief.md](day37-2026-05-17-sunday_news_brief.md) | 周日休市，晚间AI新闻播报第2次 |
 | Day 36 | 05-16 | [day36-2026-05-16-saturday_cleanup.md](day36-2026-05-16-saturday_cleanup.md) | 周六休市，AI新闻推送 + 日记清理 + 备份未完成 |
 
 ## 统计
