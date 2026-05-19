@@ -1,29 +1,29 @@
 {
   "stm": {
-    "count": 19,
-    "last_ts": "2026-05-17T22:02:58.267337",
-    "last_sessions": 17,
-    "last_messages": 2493,
-    "last_chars": 9668
+    "count": 21,
+    "last_ts": "2026-05-18T20:20:51.456333",
+    "last_sessions": 3,
+    "last_messages": 222,
+    "last_chars": 11171
   },
   "diary": {
-    "count": 63,
-    "last_ts": "2026-05-18T03:58:14.332872",
+    "count": 64,
+    "last_ts": "2026-05-19T03:54:45.188036",
     "last_error": "The read operation timed out",
-    "last_day": 24,
+    "last_day": 38,
     "last_sessions": 2,
-    "last_messages": 2,
-    "last_filename": "day24-2026-05-05-five_gigs_of_shame.md",
-    "last_latency_s": 7.0,
+    "last_messages": 3,
+    "last_filename": "day38-2026-05-19-the_missing_bracket_at_5am.md",
+    "last_latency_s": 8.4,
     "last_skip": "messages<3"
   },
   "compact": {
-    "count": 63,
-    "last_ts": "2026-05-18T03:58:15.247464",
+    "count": 64,
+    "last_ts": "2026-05-19T03:54:54.086878",
     "last_invoke": 29,
-    "last_sessions": 16,
-    "last_messages": 2485,
-    "last_latency_s": 10.1,
+    "last_sessions": 4,
+    "last_messages": 224,
+    "last_latency_s": 8.7,
     "last_model": "k2p5",
     "last_skip": "stm_hash_unchanged"
   }
