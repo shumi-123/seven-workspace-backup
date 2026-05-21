@@ -36,10 +36,12 @@
 | Day 37 | 05-17 | [day37-2026-05-17-sunday_news_brief.md](day37-2026-05-17-sunday_news_brief.md) | 周日休市，晚间AI新闻播报第2次 |
 | Day 36 | 05-16 | [day36-2026-05-16-saturday_cleanup.md](day36-2026-05-16-saturday_cleanup.md) | 周六休市，AI新闻推送 + 日记清理 + 备份未完成 |
 
+| Day 39 | 05-20 | [day39-2026-05-20-defensive_trigger_data_only.md](day39-2026-05-20-defensive_trigger_data_only.md) | 全线回调，持仓触发减仓线，但我不替你做决定 |
+
 ## 统计
 
-- **总篇数：** 23篇
-- **覆盖天数：** Day 2 ~ Day 39（共33天，缺Day 1, 5, 6, 9, 11, 15, 17, 19）"今天又赚钱了" + LLM构建方向确认 |
+- **总篇数：** 24篇
+- **覆盖天数：** Day 2 ~ Day 39（共34天）
 - **平均长度：** ~3.2KB
 - **最长：** Day 22（3.7KB）
 - **最短：** Day 20（1.7KB）
