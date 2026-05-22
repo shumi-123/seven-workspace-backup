@@ -7,20 +7,20 @@
     "last_chars": 10967
   },
   "diary": {
-    "count": 67,
-    "last_ts": "2026-05-21T03:45:53.920291",
+    "count": 68,
+    "last_ts": "2026-05-22T03:34:36.530692",
     "last_error": "The read operation timed out",
     "last_day": 32,
     "last_sessions": 1,
     "last_messages": 3,
     "last_filename": "day32-2026-05-21-three_stop_loss_lines_hurt.md",
     "last_latency_s": 11.9,
-    "last_skip": "conversation_hash_unchanged"
+    "last_skip": "no_sessions_today"
   },
   "compact": {
-    "count": 67,
-    "last_ts": "2026-05-21T03:46:04.635764",
-    "last_invoke": 31,
+    "count": 68,
+    "last_ts": "2026-05-22T03:34:36.933263",
+    "last_invoke": 32,
     "last_sessions": 8,
     "last_messages": 441,
     "last_latency_s": 10.4,
