@@ -38,10 +38,14 @@
 
 | Day 40 | 05-21 | [day40-2026-05-21-full_pipeline_day.md](day40-2026-05-21-full_pipeline_day.md) | 7项cron全链路运转，NVDA财报超预期但A股算力链崩盘，两持仓破线 |
 
+| Day 41 | 05-23 | [day41-2026-05-23-rest_day_ai_news_heavy.md](day41-2026-05-23-rest_day_ai_news_heavy.md) | 周六休市，阿里云全栈发布+AI新闻10条整理 |
+
+| Day 42 | 05-24 | [day42-2026-05-24-sunday_research_and_book_hunt.md](day42-2026-05-24-sunday_research_and_book_hunt.md) | 周日休市，Boss找书《恐惧与贪婪》+晚间AI新闻10条 |
+
 ## 统计
 
-- **总篇数：** 25篇
-- **覆盖天数：** Day 2 ~ Day 40（共35天）
+- **总篇数：** 26篇
+- **覆盖天数：** Day 2 ~ Day 42（共36天）
 - **平均长度：** ~3.2KB
 - **最长：** Day 22（3.7KB）
 - **最短：** Day 20（1.7KB）
