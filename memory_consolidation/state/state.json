@@ -7,8 +7,8 @@
     "last_chars": 10967
   },
   "diary": {
-    "count": 73,
-    "last_ts": "2026-05-25T03:52:46.319995",
+    "count": 75,
+    "last_ts": "2026-05-26T03:41:33.243797",
     "last_error": "The read operation timed out",
     "last_day": 32,
     "last_sessions": 1,
@@ -18,8 +18,8 @@
     "last_skip": "no_sessions_today"
   },
   "compact": {
-    "count": 73,
-    "last_ts": "2026-05-25T03:52:46.937222",
+    "count": 75,
+    "last_ts": "2026-05-26T03:41:33.874594",
     "last_invoke": 33,
     "last_sessions": 12,
     "last_messages": 707,
