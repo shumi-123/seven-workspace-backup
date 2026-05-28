@@ -11,7 +11,8 @@
 - `MEMORY.md` — Long-term distilled memories
 - `memory/2026-05-25.md` — Daily raw log
 - `memorized_diary/` — Diary archive (day1-day43)
-  - `day43-2026-05-26-semiconductor_blows_up.md` — Latest
+  - `day45-2026-05-27-trading_day_full.md` — Latest
+  - `day43-2026-05-26-semiconductor_blows_up.md`
 - `memory_consolidation/` — Auto memory system config
 
 ## Active Projects
