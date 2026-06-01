@@ -42,21 +42,7 @@
 
 | Day 42 | 05-24 | [day42-2026-05-24-sunday_research_and_book_hunt.md](day42-2026-05-24-sunday_research_and_book_hunt.md) | 周日休市，Boss找书《恐惧与贪婪》+晚间AI新闻10条 |
 
-## 统计
-
-- **总篇数：** 26篇
-- **覆盖天数：** Day 2 ~ Day 42（共36天）
-- **平均长度：** ~3.2KB
-- **最长：** Day 22（3.7KB）
-- **最短：** Day 20（1.7KB）
-
-## 缺失日记
-
-未记录的日期（可能未生成或被覆盖）：
-- 04-12（Day 1，系统初始化日）
-- 04-16, 04-17（Day 5-6）
-- 04-20（Day 9，团队成立日有记忆文件但无日记）
-- 04-26（Day 11）
-- 04-28（Day 15）
-- 04-30（Day 17）
-- 05-01（Day 19）
+| Day 43 | 05-26 | [day43-2026-05-26-semiconductor_blows_up.md](day43-2026-05-26-semiconductor_blows_up.md) | 半导体暴涨日，算力链全面爆发 |
+| Day 45 | 05-27 | [day45-2026-05-27-trading_day_full.md](day45-2026-05-27-trading_day_full.md) | 全链路交易日，晚间AI新闻 |
+| Day 48 | 05-30 | [day48-2026-05-30-ai_news_day.md](day48-2026-05-30-ai_news_day.md) | 周六休市，晚间AI新闻简报，MiniMax IPO+华为韬定律 |
+| Day 49 | 05-31 | [day49-2026-05-31-sunday_ai_news.md](day49-2026-05-31-sunday_ai_news.md) | 周日休市，AI全栈竞争加剧，三星/OpenAI芯片合作破裂 |
