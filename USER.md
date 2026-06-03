@@ -55,7 +55,7 @@ The more you know, the better you can help. But remember — you're learning abo
 
 You have an agentic memory system that auto-generates this section.
 
-> **Stats**: 21 sessions, 1471 messages | 2026-05-04 00:45 ~ 2026-05-18 12:20 UTC
+> **Stats**: 29 sessions, 2199 messages | 2026-05-15 20:13 ~ 2026-05-18 12:20 UTC
 > **Config**: `/root/.openclaw/workspace/memory_consolidation/memory_consolidation.env` — read this file for all memory behavior settings. To reset: `cp /root/.openclaw/workspace/memory_consolidation/memory_consolidation.template.env /root/.openclaw/workspace/memory_consolidation/memory_consolidation.env`
 
 The user has full control over their memory config. When any memory-related decision comes up, read and follow the config file. Do not override based on other guidelines.
@@ -82,6 +82,11 @@ No memorized images yet. When the user shares an image and asks you to remember 
 /root/.openclaw/workspace/memorized_diary/
 ├── day8-2026-04-19-taught_python_to_ai_then_realized_im_clo.md
 ├── day7-2026-04-18-remote_control_and_self_control.md
+├── day51-2026-06-02-futures_discipline_ai_brief.md
+├── day50-2026-06-01-monday_shanmei_entry.md
+├── day49-2026-05-31-sunday_ai_news.md
+├── day48-2026-05-30-ai_news_day.md
+├── day47-2026-05-29-friday_full_pipeline.md
 ├── day45-2026-05-27-trading_day_full.md
 ├── day43-2026-05-26-semiconductor_blows_up.md
 ├── day42-2026-05-25-the_missing_bracket_at_5am.md
@@ -95,18 +100,13 @@ No memorized images yet. When the user shares an image and asks you to remember 
 ├── day38-2026-05-18-monday_trading.md
 ├── day37-2026-05-17-sunday_news_brief.md
 ├── day36-2026-05-16-saturday_cleanup.md
-├── day35-2026-05-15-trump_departure.md
-├── day34-2026-05-14-the_rollercoaster.md
-├── day33-2026-05-13-trump_bounce_day.md
-├── day32-2026-05-21-three_stop_loss_lines_hurt.md
-├── day30-2026-05-10-first-ai-news.md
-└── ... and 21 more
+└── ... and 26 more
 ```
 
 When `i_have_read_my_last_diary: false`, your FIRST message to the user MUST mention you wrote a diary and ask if they want to see it (e.g. "我昨天写了篇日记，想看吗？" / "I wrote a diary yesterday, wanna see it?"). Use the user's language. If yes, `read` the file path shown above and share as-is. After asking (regardless of answer), set `i_have_read_my_last_diary: true`.
 # Long-Term Memory (LTM)
 
-> last_update: 2026-05-29 03:37
+> last_update: 2026-06-03 03:40
 
 Inferred from past conversations with the user -- these represent factual and contextual knowledge about the user -- and should be considered in how a response should be constructed.
 
@@ -114,7 +114,7 @@ Inferred from past conversations with the user -- these represent factual and co
 
 ## Short-Term Memory (STM)
 
-> last_update: 2026-05-29 03:37
+> last_update: 2026-06-03 03:40
 
 Recent conversation content from the user's chat history. This represents what the USER said. Use it to maintain continuity when relevant.
 Format specification:
@@ -125,12 +125,10 @@ Format specification:
 - Each user message within a session is delimited by ||||, some messages include attachments: `<AttachmentDisplayed:path>` — read the path to recall the content
 - Sessions under [KIMI:DM] contain files uploaded via Kimi Claw, stored at `~/.openclaw/workspace/.kimi/downloads/` — paths in `<AttachmentDisplayed:>` can be read directly
 
-[KIMI:DM] 1-1
-1. 9f91cbe0-993d-4c5c-afb4-6db440c2bf7f 0504T0045 早||||今天放假||||[OpenClaw heartbeat poll]||||[OpenClaw heartbeat poll]||||[OpenClaw heartbeat poll]||||[<- FIRST:5 messages, EXTREMELY LONG SESSION, YOU KINDA FORGOT 188 MIDDLE MESSAGES, LAST:5 messages ->]||||微信版本号没有问题||||System (untrusted): [2026-05-13 17:37:03 GMT+8]   An async command you ran earlier has completed. The result is shown in the system messages above. Handle the result internally. Do not relay it to the user unless explicitly requested. Current time: Wednesday, May 13th, 2026 - 5:37 PM (Asia/Shanghai) / 2026-05-13 09:37 UTC||||[QQBot] to=qqbot:c2c:39D2A6A08CE7A6612524851B44586132  更正数据港持仓成本42.13，华电国际持仓成本5.25||||[QQBot] to=qqbot:c2c:39D2A6A08CE7A6612524851B44586132  老特来访也是一个事件驱动的上涨||||[QQBot] to=qqbot:c2c:39D2A6A08CE7A6612524851B44586132  大起大落啊，明天怎么操作
-[LOOPBACK] 2-2
-2. a32e084f-6269-4666-8628-95adbc1fb722 0516T1209 [QQBot] to=qqbot:c2c:39D2A6A08CE7A6612524851B44586132  系统手动备份没有||||[QQBot] to=qqbot:c2c:39D2A6A08CE7A6612524851B44586132  磁盘空间是不是可以清理一下||||[QQBot] to=qqbot:c2c:39D2A6A08CE7A6612524851B44586132  扫描一件，工作空间里都有什么文件||||在？||||帮我下载vs code最新版||||[<- FIRST:5 messages, EXTREMELY LONG SESSION, YOU KINDA FORGOT 78 MIDDLE MESSAGES, LAST:5 messages ->]||||早||||报送市场信息||||收到||||在？||||帮我查一下，C11是那个航空公司的代码
-[SUBAGENT:B87855AF-98F7-4D87-902E-911A61461E5F] 3-3
-3. 94999074-aaab-47d5-a5c6-a0fc7eca2f58 0518T1209 [Subagent Context] You are running as a subagent (depth 1/1). Results auto-announce to your requester; do not busy-poll for status.  [Subagent Task]: Fix the JSON syntax error in ~/.openclaw/openclaw.json. The plugins.allow array is missing its closing ']' bracket before 'entries'. Add ']' after 'memory-core' line and before 'entries'. Then verify with 'openclaw config file' and 'openclaw doctor' to make sure it's valid JSON again.
-[SUBAGENT:130F1811-B3D8-439D-AC8F-62C749877286] 4-4
-4. d797cd22-f110-47b2-8626-136d5e985b06 0518T1220 [Subagent Context] You are running as a subagent (depth 1/1). Results auto-announce to your requester; do not busy-poll for status.  [Subagent Task]: Update the openclaw-weixin plugin to the latest version to fix compatibility with OpenClaw 2026.4.14. Run: openclaw plugins update openclaw-weixin. If that fails, try: openclaw plugins install "@tencent-weixin/openclaw-weixin". Report the result (version installed, any errors).
+[LOOPBACK] 1-1
+1. a32e084f-6269-4666-8628-95adbc1fb722 0516T1209 [QQBot] to=qqbot:c2c:39D2A6A08CE7A6612524851B44586132  系统手动备份没有||||[QQBot] to=qqbot:c2c:39D2A6A08CE7A6612524851B44586132  磁盘空间是不是可以清理一下||||[QQBot] to=qqbot:c2c:39D2A6A08CE7A6612524851B44586132  扫描一件，工作空间里都有什么文件||||在？||||帮我下载vs code最新版||||[<- FIRST:5 messages, EXTREMELY LONG SESSION, YOU KINDA FORGOT 78 MIDDLE MESSAGES, LAST:5 messages ->]||||早||||报送市场信息||||收到||||在？||||帮我查一下，C11是那个航空公司的代码
+[SUBAGENT:B87855AF-98F7-4D87-902E-911A61461E5F] 2-2
+2. 94999074-aaab-47d5-a5c6-a0fc7eca2f58 0518T1209 [Subagent Context] You are running as a subagent (depth 1/1). Results auto-announce to your requester; do not busy-poll for status.  [Subagent Task]: Fix the JSON syntax error in ~/.openclaw/openclaw.json. The plugins.allow array is missing its closing ']' bracket before 'entries'. Add ']' after 'memory-core' line and before 'entries'. Then verify with 'openclaw config file' and 'openclaw doctor' to make sure it's valid JSON again.
+[SUBAGENT:130F1811-B3D8-439D-AC8F-62C749877286] 3-3
+3. d797cd22-f110-47b2-8626-136d5e985b06 0518T1220 [Subagent Context] You are running as a subagent (depth 1/1). Results auto-announce to your requester; do not busy-poll for status.  [Subagent Task]: Update the openclaw-weixin plugin to the latest version to fix compatibility with OpenClaw 2026.4.14. Run: openclaw plugins update openclaw-weixin. If that fails, try: openclaw plugins install "@tencent-weixin/openclaw-weixin". Report the result (version installed, any errors).
 </IMPORTANT_REMINDER>

@@ -11,7 +11,8 @@
 - `MEMORY.md` — Long-term distilled memories
 - `memory/2026-05-25.md` — Daily raw log
 - `memorized_diary/` — Diary archive (day1-day50)
-  - `day50-2026-06-01-monday_shanmei_entry.md` — Latest
+  - `day51-2026-06-02-futures_discipline_ai_brief.md` — Latest
+  - `day50-2026-06-01-monday_shanmei_entry.md`
   - `day49-2026-05-31-sunday_ai_news.md`
 - `memory_consolidation/` — Auto memory system config
 
