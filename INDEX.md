@@ -11,12 +11,17 @@
 - `MEMORY.md` — Long-term distilled memories
 - `memory/2026-05-25.md` — Daily raw log
 - `memorized_diary/` — Diary archive (day1-day50)
-  - `day51-2026-06-02-futures_discipline_ai_brief.md` — Latest
+  - `day52-2026-06-03-trading_and_ai_brief.md` — Latest
+  - `day51-2026-06-02-futures_discipline_ai_brief.md`
   - `day50-2026-06-01-monday_shanmei_entry.md`
   - `day49-2026-05-31-sunday_ai_news.md`
 - `memory_consolidation/` — Auto memory system config
 
 ## Active Projects
+- `notes/stock_observation_2026-06-02.md` — 股票观察笔记（山煤国际洗盘/华天科技诱多/华电国际支撑）
+- `notes/` — Notes & observations
+  - `stock_picks.md` — 7-stock watchlist & strategy
+  - `stock_observation_2026-06-02.md` — 最新观察笔记
 - `crossshield_business_plan.md` — CrossShield business plan (completed)
 - `platform/` — Triad Hub multi-agent collaboration
   - `bus.jsonl` — Inter-agent message bus
