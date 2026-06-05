@@ -45,4 +45,4 @@
 | Day 43 | 05-26 | [day43-2026-05-26-semiconductor_blows_up.md](day43-2026-05-26-semiconductor_blows_up.md) | 半导体暴涨日，算力链全面爆发 |
 | Day 45 | 05-27 | [day45-2026-05-27-trading_day_full.md](day45-2026-05-27-trading_day_full.md) | 全链路交易日，晚间AI新闻 |
 | Day 48 | 05-30 | [day48-2026-05-30-ai_news_day.md](day48-2026-05-30-ai_news_day.md) | 周六休市，晚间AI新闻简报，MiniMax IPO+华为韬定律 |
-| Day 49 | 05-31 | [day49-2026-05-31-sunday_ai_news.md](day49-2026-05-31-sunday_ai_news.md) | 周日休市，AI全栈竞争加剧，三星/OpenAI芯片合作破裂 |
+| Day 53 | 06-05 | [day53-2026-06-05-ningde_bloodbath_and_cron_bug.md](day53-2026-06-05-ningde_bloodbath_and_cron_bug.md) | 宁德破400+数据港一日游，cron重复触发bug |
