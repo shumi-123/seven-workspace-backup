@@ -11,7 +11,8 @@
 - `MEMORY.md` — Long-term distilled memories
 - `memory/2026-05-25.md` — Daily raw log
 - `memorized_diary/` — Diary archive (day1-day50)
-  - `day52-2026-06-03-trading_and_ai_brief.md` — Latest
+  - `day53-2026-06-04-ningde_bloodbath.md` — Latest
+  - `day52-2026-06-03-trading_and_ai_brief.md`
   - `day51-2026-06-02-futures_discipline_ai_brief.md`
   - `day50-2026-06-01-monday_shanmei_entry.md`
   - `day49-2026-05-31-sunday_ai_news.md`
