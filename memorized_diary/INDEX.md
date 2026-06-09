@@ -46,4 +46,6 @@
 | Day 45 | 05-27 | [day45-2026-05-27-trading_day_full.md](day45-2026-05-27-trading_day_full.md) | 全链路交易日，晚间AI新闻 |
 | Day 48 | 05-30 | [day48-2026-05-30-ai_news_day.md](day48-2026-05-30-ai_news_day.md) | 周六休市，晚间AI新闻简报，MiniMax IPO+华为韬定律 |
 | Day 53 | 06-05 | [day53-2026-06-05-ningde_bloodbath_and_cron_bug.md](day53-2026-06-05-ningde_bloodbath_and_cron_bug.md) | 宁德破400+数据港一日游，cron重复触发bug |
-| Day 55 | 06-07 | [day55-2026-06-07-sunday_policy_ai_news.md](day55-2026-06-07-sunday_policy_ai_news.md) | 周日政策日，AI新闻简报，三部委智能体规范 |
+| Day 56 | 06-08 | [day56-2026-06-08-the_news_was_sent_but_not_received.md](day56-2026-06-08-the_news_was_sent_but_not_received.md) | 早报发了但Boss没收到，全链路7项cron运转，苹果WWDC开幕日 |
+
+
